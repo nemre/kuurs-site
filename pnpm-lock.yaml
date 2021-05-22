@@ -1,39 +1,47 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@rollup/plugin-run': ^2.0.2
   prettier: ^2.3.0
   rollup: ^2.48.0
 
 devDependencies:
+  '@rollup/plugin-run': 2.0.2_rollup@2.48.0
   prettier: 2.3.0
   rollup: 2.48.0
 
 packages:
+
+  /@rollup/plugin-run/2.0.2_rollup@2.48.0:
+    resolution: {integrity: sha512-ueUAPnd98mZlywKmG1BF3s00EljxStI8C695mkERbVd0ESAt5vFu0lZiwfxe/pxtBty/PbhheqjHTPIP7JJgzQ==}
+    engines: {node: '>=8.0.0'}
+    peerDependencies:
+      rollup: ^2.0.0
+    dependencies:
+      '@types/node': 13.1.6
+      rollup: 2.48.0
+    dev: true
+
+  /@types/node/13.1.6:
+    resolution: {integrity: sha512-Jg1F+bmxcpENHP23sVKkNuU3uaxPnsBMW0cLjleiikFKomJQbsn0Cqk2yDvQArqzZN6ABfBkZ0To7pQ8sLdWDg==}
+    dev: true
+
   /fsevents/2.3.2:
-    resolution:
-      {
-        integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
-      }
-    engines: { node: ^8.16.0 || ^10.6.0 || >=11.0.0 }
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     dev: true
     optional: true
 
   /prettier/2.3.0:
-    resolution:
-      {
-        integrity: sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==
-      }
-    engines: { node: '>=10.13.0' }
+    resolution: {integrity: sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==}
+    engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
   /rollup/2.48.0:
-    resolution:
-      {
-        integrity: sha512-wl9ZSSSsi5579oscSDYSzGn092tCS076YB+TQrzsGuSfYyJeep8eEWj0eaRjuC5McuMNmcnR8icBqiE/FWNB1A==
-      }
-    engines: { node: '>=10.0.0' }
+    resolution: {integrity: sha512-wl9ZSSSsi5579oscSDYSzGn092tCS076YB+TQrzsGuSfYyJeep8eEWj0eaRjuC5McuMNmcnR8icBqiE/FWNB1A==}
+    engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
