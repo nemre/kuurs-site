@@ -1,8 +1,12 @@
 {
   "devDependencies": {
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.0",
+    "rollup": "^2.48.0"
   },
   "scripts": {
-    "format": "prettier -w ."
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "format": "prettier -w .",
+    "start": "node dist"
   }
 }
