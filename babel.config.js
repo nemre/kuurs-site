@@ -3,9 +3,8 @@ module.exports = {
     [
       '@babel/plugin-transform-react-jsx',
       {
-        //throwIfNamespace: false, // defaults to true
-        runtime: 'automatic', // defaults to classic
-        importSource: 'preact' // defaults to react
+        runtime: 'automatic',
+        importSource: 'preact'
       }
     ]
   ]
