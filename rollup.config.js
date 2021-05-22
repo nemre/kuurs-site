@@ -1,9 +1,14 @@
+import babel from '@rollup/plugin-babel'
 import run from '@rollup/plugin-run'
 
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/index.js'
+    file: 'dist/index.js',
+    format: 'cjs'
   },
-  plugins: process.env.ROLLUP_WATCH && run()
+  plugins: [
+    babel({ babelHelpers: 'bundled' }),
+    process.env.ROLLUP_WATCH && run()
+  ]
 }
