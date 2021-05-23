@@ -11,6 +11,10 @@ module.exports = {
             path: 'classnames'
           },
           {
+            default: 'Col',
+            path: path.resolve(__dirname, 'src/components/Col.jsx')
+          },
+          {
             default: 'Row',
             path: path.resolve(__dirname, 'src/components/Row.jsx')
           },

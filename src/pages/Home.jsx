@@ -6,7 +6,10 @@ function Home(props) {
         <link rel="stylesheet" href={props.stylesheetHref} />
       </head>
       <body>
-        <Row>Home</Row>
+        <Row>
+          <Col>Left</Col>
+          <Col>Right</Col>
+        </Row>
         <script src={props.scriptHref}></script>
       </body>
     </html>
