@@ -6,10 +6,12 @@
     "@rollup/plugin-run": "^2.0.2",
     "babel-plugin-auto-import": "^1.1.0",
     "express": "^4.17.1",
+    "postcss": "^8.3.0",
     "preact": "^10.5.13",
     "preact-render-to-string": "^5.1.19",
     "prettier": "^2.3.0",
-    "rollup": "^2.49.0"
+    "rollup": "^2.49.0",
+    "rollup-plugin-postcss": "^4.0.0"
   },
   "scripts": {
     "build": "rollup -c",
