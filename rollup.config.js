@@ -19,7 +19,8 @@ export default {
       targets: [{ src: 'src/static', dest: 'dist' }]
     }),
     postcss({
-      extract: true
+      extract: 'static/index.css',
+      modules: true
     }),
     process.env.ROLLUP_WATCH && run()
   ]

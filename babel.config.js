@@ -17,6 +17,10 @@ module.exports = {
           {
             default: 'express',
             path: 'express'
+          },
+          {
+            default: 'styles',
+            path: path.resolve(__dirname, 'src/assets/index.css')
           }
         ]
       }

@@ -1,5 +1,5 @@
 function Row(props) {
-  return <div>{props.children}</div>
+  return <div class={styles.test}>{props.children}</div>
 }
 
 export default Row
