@@ -7,6 +7,10 @@ module.exports = {
       {
         declarations: [
           {
+            default: 'classNames',
+            path: 'classnames'
+          },
+          {
             default: 'Row',
             path: path.resolve(__dirname, 'src/components/Row.jsx')
           },

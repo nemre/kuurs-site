@@ -6,7 +6,7 @@ function Home(props) {
         <link rel="stylesheet" href={props.stylesheetHref} />
       </head>
       <body>
-        <h1 class={styles.test}>Home</h1>
+        <h1 class={classNames(styles.test)}>Home</h1>
         <script src={props.scriptHref}></script>
       </body>
     </html>
