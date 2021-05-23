@@ -6,7 +6,8 @@ function Home(props) {
         <link rel="stylesheet" href={props.stylesheetHref} />
       </head>
       <body>
-        <h1>Home</h1>
+        <h1 class={styles.test}>Home</h1>
+        <script src={props.scriptHref}></script>
       </body>
     </html>
   )
@@ -15,7 +16,8 @@ function Home(props) {
 Home.defaultProps = {
   lang: 'tr',
   title: 'Kuurs',
-  stylesheetHref: 'index.css'
+  stylesheetHref: 'index.css',
+  scriptHref: 'index.js'
 }
 
 export default Home
