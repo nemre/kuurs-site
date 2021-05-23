@@ -48,3 +48,20 @@ html {
 .overflow-y-auto {
   overflow-y: auto;
 }
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}

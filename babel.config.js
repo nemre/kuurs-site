@@ -15,6 +15,10 @@ module.exports = {
             path: path.resolve(__dirname, 'src/components/Col.jsx')
           },
           {
+            default: 'Icon',
+            path: path.resolve(__dirname, 'src/components/Icon.jsx')
+          },
+          {
             default: 'Row',
             path: path.resolve(__dirname, 'src/components/Row.jsx')
           },
