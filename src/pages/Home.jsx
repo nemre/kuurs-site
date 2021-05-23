@@ -1,6 +1,6 @@
 function Home(props) {
   return (
-    <html lang={props.lang}>
+    <html lang={props.lang} class="h-full">
       <head>
         <title>{props.title}</title>
         <link rel="stylesheet" href={props.stylesheetHref} />
@@ -19,7 +19,7 @@ Home.defaultProps = {
   title: 'Kuurs',
   stylesheetHref: 'index.css',
   scriptHref: 'index.js',
-  defaultClass: 'flex h-full bg-purple-500 m-0'
+  defaultClass: 'flex h-full bg-purple-500'
 }
 
 export default Home
