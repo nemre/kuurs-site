@@ -7,6 +7,10 @@ module.exports = {
       {
         declarations: [
           {
+            default: 'icons',
+            path: path.resolve(__dirname, 'src/utils/icons.js')
+          },
+          {
             default: 'classNames',
             path: 'classnames'
           },

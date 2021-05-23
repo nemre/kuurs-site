@@ -1,7 +1,7 @@
 function IconButton(props) {
   return (
     <div class={classNames(props.class, props.defaultClass)}>
-      <Icon />
+      <Icon name={props.icon} />
     </div>
   )
 }

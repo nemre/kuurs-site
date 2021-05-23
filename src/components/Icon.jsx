@@ -1,9 +1,14 @@
 function Icon(props) {
-  return <div class={classNames(props.class, props.defaultClass)} />
+  return (
+    <svg viewBox={props.viewBox} class={classNames(props.class, props.defaultClass)}>
+      <path d={icons[props.name]} />
+    </svg>
+  )
 }
 
 Icon.defaultProps = {
-  defaultClass: 'h-6 w-6 rounded-2xl bg-pink-500'
+  defaultClass: 'fill-current h-6 w-6 ',
+  viewBox: '0 0 24 24'
 }
 
 export default Icon

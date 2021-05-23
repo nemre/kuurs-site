@@ -1,3 +1,15 @@
+.fill-current {
+  fill: currentColor;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -47,14 +59,6 @@ html {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .bg-pink-500 {
