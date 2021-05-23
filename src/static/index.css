@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  height: 100%;
 }
 
 .flex {
@@ -8,4 +13,31 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-purple-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+}
+
+.rounded-l-2xl {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }

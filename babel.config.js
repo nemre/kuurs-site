@@ -19,6 +19,10 @@ module.exports = {
             path: path.resolve(__dirname, 'src/components/Row.jsx')
           },
           {
+            default: 'Sidebar',
+            path: path.resolve(__dirname, 'src/components/Sidebar.jsx')
+          },
+          {
             default: 'render',
             path: 'preact-render-to-string'
           },

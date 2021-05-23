@@ -6,9 +6,9 @@ function Home(props) {
         <link rel="stylesheet" href={props.stylesheetHref} />
       </head>
       <body>
-        <Row>
-          <Col>Left</Col>
-          <Col>Right</Col>
+        <Row class="h-full bg-purple-500">
+          <Sidebar />
+          <Col class="flex-grow rounded-l-2xl bg-white" />
         </Row>
         <script src={props.scriptHref}></script>
       </body>
