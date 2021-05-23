@@ -9,6 +9,14 @@ module.exports = {
           {
             default: 'Row',
             path: path.resolve(__dirname, 'src/components/Row.jsx')
+          },
+          {
+            default: 'render',
+            path: 'preact-render-to-string'
+          },
+          {
+            default: 'express',
+            path: 'express'
           }
         ]
       }

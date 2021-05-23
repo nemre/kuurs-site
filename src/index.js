@@ -1,6 +1,3 @@
-import express from 'express'
-import render from 'preact-render-to-string'
-
 var app = express()
 
 app.get('/', (req, res) => {
