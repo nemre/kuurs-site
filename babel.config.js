@@ -21,6 +21,10 @@ module.exports = {
           {
             default: 'styles',
             path: path.resolve(__dirname, 'src/assets/index.css')
+          },
+          {
+            default: 'Home',
+            path: path.resolve(__dirname, 'src/pages/Home.jsx')
           }
         ]
       }
