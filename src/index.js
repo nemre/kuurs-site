@@ -4,7 +4,7 @@ import render from 'preact-render-to-string'
 var app = express()
 
 app.get('/', (req, res) => {
-  res.send(render(<h1>Hello</h1>))
+  res.send(render(<Row>Hello</Row>))
 })
 
 app.listen(process.env.PORT || 80, () => {
