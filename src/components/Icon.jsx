@@ -7,7 +7,7 @@ function Icon(props) {
 }
 
 Icon.defaultProps = {
-  defaultClass: 'fill-current h-6 w-6 ',
+  defaultClass: 'fill-current h-6 w-6',
   viewBox: '0 0 24 24'
 }
 
