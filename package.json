@@ -11,6 +11,8 @@
     "preact-render-to-string": "^5.1.19",
     "prettier": "^2.3.0",
     "rollup": "^2.49.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-postcss": "^4.0.0"
   },
   "scripts": {

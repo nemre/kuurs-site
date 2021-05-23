@@ -1,4 +1,8 @@
+import path from 'path'
+
 var app = express()
+
+app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
   res.send(render(<Row>Hello</Row>))
