@@ -7,7 +7,7 @@ function IconButton(props) {
 }
 
 IconButton.defaultProps = {
-  defaultClass: 'p-2 rounded-2xl bg-red-500'
+  defaultClass: 'p-2 rounded-2xl bg-red-500 cursor-pointer'
 }
 
 export default IconButton
