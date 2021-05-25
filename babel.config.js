@@ -23,6 +23,10 @@ module.exports = {
             path: path.resolve(__dirname, 'src/components/Icon.jsx')
           },
           {
+            default: 'IconAnchor',
+            path: path.resolve(__dirname, 'src/components/IconAnchor.jsx')
+          },
+          {
             default: 'Row',
             path: path.resolve(__dirname, 'src/components/Row.jsx')
           },

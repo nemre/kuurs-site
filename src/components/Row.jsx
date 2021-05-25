@@ -1,9 +1,5 @@
 function Row(props) {
-  return (
-    <div class={classNames(props.class, props.defaultClass)}>
-      {props.children}
-    </div>
-  )
+  return <div class={classNames(props.class, props.defaultClass)}>{props.children}</div>
 }
 
 Row.defaultProps = {

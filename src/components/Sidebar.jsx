@@ -1,13 +1,13 @@
 function Sidebar(props) {
   return (
     <Col class={classNames(props.class, props.defaultClass)}>
-      <span>x</span>
+      <IconAnchor icon="slack" />
       <Col class="flex-grow overflow-y-auto">
         <span>x</span>
         <span>x</span>
         <span>x</span>
       </Col>
-      <span>x</span>
+      <IconAnchor href="settings" icon="settings" />
     </Col>
   )
 }
