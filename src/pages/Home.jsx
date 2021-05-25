@@ -8,8 +8,18 @@ function Home(props) {
       <body class={classNames(props.class, props.defaultClass)}>
         <Sidebar
           courses={[
-            { name: 'figma', url: 'figma-dersleri' },
-            { name: 'svelte', url: 'svelte-dersleri' }
+            { name: 'Angular', slug: 'angular', url: 'angular-dersleri' },
+            { name: 'Svelte', slug: 'svelte', url: 'svelte-dersleri' },
+            { name: 'Angular', slug: 'angular', url: 'angular-dersleri' },
+            { name: 'Svelte', slug: 'svelte', url: 'svelte-dersleri' },
+            { name: 'Angular', slug: 'angular', url: 'angular-dersleri' },
+            { name: 'Svelte', slug: 'svelte', url: 'svelte-dersleri' },
+            { name: 'Angular', slug: 'angular', url: 'angular-dersleri' },
+            { name: 'Svelte', slug: 'svelte', url: 'svelte-dersleri' },
+            { name: 'Angular', slug: 'angular', url: 'angular-dersleri' },
+            { name: 'Svelte', slug: 'svelte', url: 'svelte-dersleri' },
+            { name: 'Angular', slug: 'angular', url: 'angular-dersleri' },
+            { name: 'Svelte', slug: 'svelte', url: 'svelte-dersleri' }
           ]}
         />
         <Col class="flex-grow rounded-l-2xl bg-white" />
@@ -20,7 +30,7 @@ function Home(props) {
 }
 
 Home.defaultProps = {
-  defaultClass: 'm-0 flex h-full bg-purple-500'
+  defaultClass: 'm-0 font-sans flex h-full bg-purple-500'
 }
 
 export default Home

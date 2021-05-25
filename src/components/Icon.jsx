@@ -1,7 +1,7 @@
 function Icon(props) {
   return (
     <svg class={classNames(props.class, props.defaultClass)}>
-      <path d={icons[props.name]} />
+      <path fill={icons[props.name].fill} d={icons[props.name].path} />
     </svg>
   )
 }
