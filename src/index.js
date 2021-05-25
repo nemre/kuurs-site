@@ -2,10 +2,11 @@ import path from 'path'
 
 var app = express()
 
-app.use(express.static(path.join(__dirname, 'static')))
+//app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
-  res.send('<!doctype html>' + render(<Home />))
+  res.send(req.ip)
+  //res.send('<!doctype html>' + render(<Home />))
 })
 
 app.listen(process.env.PORT || 80, () => {
