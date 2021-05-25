@@ -1,25 +1,21 @@
 function Home(props) {
   return (
-    <html lang={props.lang} class="h-full">
+    <html lang="tr" class="h-full">
       <head>
-        <title>{props.title}</title>
-        <link rel="stylesheet" href={props.stylesheetHref} />
+        <title>Kuurs</title>
+        <link rel="stylesheet" href="index.css" />
       </head>
       <body class={classNames(props.class, props.defaultClass)}>
         <Sidebar />
         <Col class="flex-grow rounded-l-2xl bg-white" />
-        <script src={props.scriptHref}></script>
+        <script src="index.js"></script>
       </body>
     </html>
   )
 }
 
 Home.defaultProps = {
-  lang: 'tr',
-  title: 'Kuurs',
-  stylesheetHref: 'index.css',
-  scriptHref: 'index.js',
-  defaultClass: 'flex h-full bg-purple-500'
+  defaultClass: 'm-0 flex h-full bg-purple-500'
 }
 
 export default Home
