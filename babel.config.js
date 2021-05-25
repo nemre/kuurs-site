@@ -23,10 +23,6 @@ module.exports = {
             path: path.resolve(__dirname, 'src/components/Icon.jsx')
           },
           {
-            default: 'IconButton',
-            path: path.resolve(__dirname, 'src/components/IconButton.jsx')
-          },
-          {
             default: 'Row',
             path: path.resolve(__dirname, 'src/components/Row.jsx')
           },
