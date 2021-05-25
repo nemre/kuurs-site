@@ -3,9 +3,9 @@ function Sidebar(props) {
     <Col class={classNames(props.class, props.defaultClass)}>
       <IconAnchor icon="slack" />
       <Col class="flex-grow overflow-y-auto">
-        <span>x</span>
-        <span>x</span>
-        <span>x</span>
+        {props.courses.map((course) => {
+          return <a href={course.url}>{course.name}</a>
+        })}
       </Col>
       <IconAnchor href="settings" icon="settings" />
     </Col>

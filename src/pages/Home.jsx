@@ -6,7 +6,12 @@ function Home(props) {
         <link rel="stylesheet" href="index.css" />
       </head>
       <body class={classNames(props.class, props.defaultClass)}>
-        <Sidebar />
+        <Sidebar
+          courses={[
+            { name: 'figma', url: 'figma-dersleri' },
+            { name: 'svelte', url: 'svelte-dersleri' }
+          ]}
+        />
         <Col class="flex-grow rounded-l-2xl bg-white" />
         <script src="index.js"></script>
       </body>
