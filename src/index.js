@@ -5,7 +5,8 @@ var app = express()
 //app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
-  res.send(req.ip)
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
+  res.send(ip)
   //res.send('<!doctype html>' + render(<Home />))
 })
 
