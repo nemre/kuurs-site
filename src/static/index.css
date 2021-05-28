@@ -10,18 +10,41 @@
   display: flex;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .bg-purple-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
 }
 
-.flex-grow {
-  flex-grow: 1;
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.rounded-l-2xl {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+.flex-col {
+  flex-direction: column;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .bg-white {
@@ -29,45 +52,13 @@
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
-.fill-current {
-  fill: currentColor;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.w-6 {
-  width: 1.5rem;
+.rounded-l-2xl {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .rounded-2xl {
   border-radius: 1rem;
-}
-
-.hover\:bg-purple-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
 }
 
 .text-white {
@@ -75,29 +66,49 @@
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.fill-current {
+  fill: currentColor;
+}
+
 .no-underline {
   text-decoration: none;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.hover\:bg-purple-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-medium {
   font-weight: 500;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.items-center {
+  align-items: center;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
