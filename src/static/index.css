@@ -112,3 +112,7 @@
 .justify-between {
   justify-content: space-between;
 }
+
+.leading-6 {
+  line-height: 1.5rem;
+}

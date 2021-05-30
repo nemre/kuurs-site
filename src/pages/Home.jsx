@@ -15,13 +15,11 @@ function Home(props) {
           <div style="height: 480px" class="overflow-y-auto">
             {props.courses.map((course) => {
               return (
-                <a class="items-center rounded-2xl hover:bg-purple-400 flex flex-col text-white no-underline p-2" href={course.url}>
+                <a class="rounded-2xl hover:bg-purple-400 flex flex-col text-white no-underline p-2" href={course.url}>
                   <svg class="w-6 h-6 p-2 rounded-2xl fill-current" style={'background-color:' + course.color}>
                     <path d={course.icon} />
                   </svg>
-                  <span style="line-height: 24px" class="w-10 truncate text-center font-medium">
-                    {course.name}
-                  </span>
+                  <span class="leading-6 w-10 truncate text-center font-medium">{course.name}</span>
                 </a>
               )
             })}
