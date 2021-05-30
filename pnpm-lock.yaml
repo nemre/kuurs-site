@@ -5,7 +5,7 @@ specifiers:
   '@babel/plugin-transform-react-jsx': ^7.14.3
   '@rollup/plugin-babel': ^5.3.0
   '@rollup/plugin-run': ^2.0.2
-  babel-plugin-auto-import: ^1.1.0
+  babel-plugin-wildcard: ^7.0.0
   classnames: ^2.3.1
   express: ^4.17.1
   preact: ^10.5.13
@@ -20,7 +20,7 @@ dependencies:
   '@babel/plugin-transform-react-jsx': 7.14.3_@babel+core@7.14.3
   '@rollup/plugin-babel': 5.3.0_@babel+core@7.14.3+rollup@2.49.0
   '@rollup/plugin-run': 2.0.2_rollup@2.49.0
-  babel-plugin-auto-import: 1.1.0
+  babel-plugin-wildcard: 7.0.0
   classnames: 2.3.1
   express: 4.17.1
   preact: 10.5.13
@@ -369,13 +369,11 @@ packages:
     engines: { node: '>=8' }
     dev: false
 
-  /babel-plugin-auto-import/1.1.0:
-    resolution: { integrity: sha512-mHtA3i1BYyWLHKc4v+NLS07VSlXGLcKIGcUmV2Xrasbox0bRV/xhe5W36Ki21GJfOZHG/eeAiwxe4tbBNbDXlA== }
+  /babel-plugin-wildcard/7.0.0:
+    resolution: { integrity: sha512-3duaRaULzxmmgr+YO9EPEE3m/irVyOWKvXCOz2S41tlp0g2UarSEtpM++D3IS+asK205OOqW1ajnjFeoRRqfZg== }
+    hasBin: true
     dependencies:
-      '@babel/core': 7.14.3
-      logical-not: 1.0.7
-    transitivePeerDependencies:
-      - supports-color
+      rimraf: 2.7.1
     dev: false
 
   /balanced-match/1.0.2:
@@ -864,10 +862,6 @@ packages:
       graceful-fs: 4.2.6
     dev: false
 
-  /logical-not/1.0.7:
-    resolution: { integrity: sha512-0UNPmWU7Kgon/TCcWBTc9p6rwfp4c4Qi5xruxuXULNYe9OJNswE8xfJFyHq459O1iREvZ8ICakwU6DfY3S9cYQ== }
-    dev: false
-
   /media-typer/0.3.0:
     resolution: { integrity: sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g= }
     engines: { node: '>= 0.6' }
@@ -1046,6 +1040,13 @@ packages:
   /reusify/1.0.4:
     resolution: { integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw== }
     engines: { iojs: '>=1.0.0', node: '>=0.10.0' }
+    dev: false
+
+  /rimraf/2.7.1:
+    resolution: { integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w== }
+    hasBin: true
+    dependencies:
+      glob: 7.1.7
     dev: false
 
   /rimraf/3.0.2:

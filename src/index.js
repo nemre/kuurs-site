@@ -1,6 +1,8 @@
 import express from 'express'
 import path from 'path'
 import render from 'preact-render-to-string'
+import * as Pages from './pages'
+
 const courses = [
   {
     name: 'Svelte',
@@ -74,7 +76,7 @@ var app = express()
 app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
-  res.send('<!doctype html>' + render(<Home courses={courses} />))
+  res.send('<!doctype html>' + render(<Pages.Home courses={courses} />))
 })
 
 app.listen(process.env.PORT || 80, () => {

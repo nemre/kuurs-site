@@ -10,10 +10,10 @@ export default {
     format: 'cjs'
   },
   plugins: [
-    del({ targets: 'dist/*' }),
     babel({
       babelHelpers: 'bundled'
     }),
+    del({ targets: 'dist/*' }),
     copy({
       targets: [{ src: 'src/static', dest: 'dist' }]
     }),
