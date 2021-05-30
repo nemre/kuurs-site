@@ -6,14 +6,14 @@ export default function Sidebar(props) {
           <path d="M9.604 8.18l4.4-6.38c0.834-1.2 1.906-1.8 3.227-1.8 1.072 0 2.002 0.381 2.789 1.144 0.783 0.765 1.176 1.675 1.176 2.738 0 0.784-0.207 1.479-0.624 2.079l-3.967 5.769 4.853 6.153c0.484 0.612 0.727 1.33 0.727 2.15 0 1.086-0.381 2.018-1.145 2.798-0.762 0.779-1.686 1.169-2.771 1.169-1.189 0-2.097-0.387-2.721-1.16l-5.943-7.417v4.089c0 1.168-0.202 2.074-0.607 2.722-0.737 1.177-1.803 1.766-3.213 1.766-1.282 0-2.276-0.436-2.979-1.299-0.66-0.799-0.99-1.856-0.99-3.172v-15.164c0-1.245 0.336-2.274 1.004-3.083 0.698-0.854 1.668-1.282 2.906-1.282 1.179 0 2.16 0.428 2.946 1.282 0.438 0.475 0.715 0.953 0.831 1.44 0.070 0.3 0.105 0.858 0.105 1.68v3.778z" />
         </svg>
       </a>
-      <div style="height: 480px" class="overflow-y-auto">
+      <div style="height: 480px" class="overflow-y-auto font-medium">
         {props.courses.map((course) => {
           return (
             <a class="rounded-2xl hover:bg-purple-400 flex flex-col text-white no-underline p-2" href={course.url}>
               <svg class="w-6 h-6 p-2 rounded-2xl fill-current" style={'background-color:' + course.color}>
                 <path d={course.icon} />
               </svg>
-              <span class="leading-6 w-10 truncate text-center font-medium">{course.name}</span>
+              <span class="leading-6 w-10 truncate text-center">{course.name}</span>
             </a>
           )
         })}
