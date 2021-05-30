@@ -4,7 +4,7 @@ import del from 'rollup-plugin-delete'
 import run from '@rollup/plugin-run'
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.jsx',
   output: {
     file: 'dist/index.js',
     format: 'cjs'
