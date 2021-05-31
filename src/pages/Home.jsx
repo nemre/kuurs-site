@@ -28,13 +28,13 @@ export default function Home(props) {
         <link rel='stylesheet' href='index.css' />
       </head>
       <body class='flex bg-gray-500 h-full'>
-        <div class='flex flex-col items-center justify-between text-white'>
+        <div class='flex flex-col items-center justify-between text-white p-2'>
           <a href='#' class='bg-white bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl m-4'>
             <svg class='w-6 h-6 fill-current'>
               <path d={icons.kuurs} />
             </svg>
           </a>
-          <div style='height: 496px' class='overflow-y-auto text-center font-medium p-2'>
+          <div style='height: 480px' class='overflow-y-auto text-center font-medium'>
             {props.courses.map((course) => {
               return (
                 <a href={course.url} class='flex flex-col bg-white items-center bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl'>
