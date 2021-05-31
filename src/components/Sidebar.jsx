@@ -9,7 +9,7 @@ export default function Sidebar(props) {
       <div style='height: 480px' class='overflow-y-auto font-medium'>
         {props.courses.map((course) => {
           return (
-            <a class='rounded-2xl hover:bg-purple-400 flex flex-col text-white no-underline p-2' href={course.url}>
+            <a class='rounded-2xl hover:bg-purple-400 flex flex-col text-white p-2' href={course.url}>
               <Components.Icon backgroundColor={course.color} class='p-2 rounded-2xl' name={course.slug} />
               <span class='leading-6 w-10 truncate text-center'>{course.name}</span>
             </a>
