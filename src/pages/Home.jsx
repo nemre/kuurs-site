@@ -27,7 +27,7 @@ export default function Home(props) {
         <title>Kuurs</title>
         <link rel='stylesheet' href='index.css' />
       </head>
-      <body class='flex bg-gray-500 h-full'>
+      <body class='flex bg-purple-500 h-full'>
         <div class='flex flex-col items-center justify-between text-white p-2'>
           <a href='#' class='bg-white bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl m-4'>
             <svg class='w-6 h-6 fill-current'>
