@@ -1,5 +1,4 @@
 import * as Components from '../components'
-import * as Utils from '../utils'
 
 export default function Home(props) {
   return (
