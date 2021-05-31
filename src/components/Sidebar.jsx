@@ -2,7 +2,7 @@ import * as Utils from '../utils'
 
 export default function Sidebar(props) {
   return (
-    <div class='flex flex-col items-center justify-between text-white p-2'>
+    <div class='flex flex-col items-center justify-between text-white p-2 font-medium'>
       <a href='#' class='bg-white bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl m-2'>
         <svg class='w-6 h-6 fill-current'>
           <path d={Utils.Icons.kuurs} />

@@ -7,7 +7,7 @@ export default function Home(props) {
         <title>Kuurs</title>
         <link rel='stylesheet' href='index.css' />
       </head>
-      <body class='flex bg-purple-500 h-full font-medium'>
+      <body class='flex bg-purple-500 h-full'>
         <Components.Sidebar courses={props.courses} />
         <div class='bg-white flex-grow rounded-l-2xl'>
           <Components.Header />
