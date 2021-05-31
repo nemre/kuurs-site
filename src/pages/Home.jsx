@@ -27,9 +27,9 @@ export default function Home(props) {
         <title>Kuurs</title>
         <link rel='stylesheet' href='index.css' />
       </head>
-      <body class='flex bg-purple-500 h-full'>
-        <div class='flex flex-col items-center justify-between px-2 py-4 text-white'>
-          <a href='#' class='hover:bg-purple-400 p-2 rounded-2xl'>
+      <body class='flex bg-gray-500 h-full'>
+        <div class='flex flex-col items-center justify-between text-white p-2'>
+          <a href='#' class='bg-white bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl m-4'>
             <svg class='w-6 h-6 fill-current'>
               <path d={icons.kuurs} />
             </svg>
@@ -37,22 +37,22 @@ export default function Home(props) {
           <div style='height: 480px' class='overflow-y-auto text-center font-medium'>
             {props.courses.map((course) => {
               return (
-                <a href={course.url} class='flex flex-col hover:bg-purple-400 p-2 rounded-2xl'>
+                <a href={course.url} class='flex flex-col bg-white items-center bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl'>
                   <svg class='w-10 h-10 p-2 rounded-2xl fill-current' style={'background-color:' + course.color}>
                     <path d={icons[course.slug]} />
                   </svg>
-                  <span class='truncate w-10'>{course.name}</span>
+                  <span class='truncate w-14'>{course.name}</span>
                 </a>
               )
             })}
           </div>
-          <a href='#' class='hover:bg-purple-400 p-2 rounded-2xl'>
+          <a href='#' class='bg-white bg-opacity-0 hover:bg-opacity-10 p-2 rounded-2xl m-4'>
             <svg class='w-6 h-6 fill-current'>
               <path d={icons.edit} />
             </svg>
           </a>
         </div>
-        <div class='bg-white flex-grow rounded-l-xl' />
+        <div class='bg-white flex-grow rounded-l-2xl' />
         <script src='index.js'></script>
       </body>
     </html>
