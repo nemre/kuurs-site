@@ -15,9 +15,14 @@ export default function Home(props) {
             <path d={Utils.Icons.alertTriangle} />
           </svg>
           Kuurs geliştirme aşamasında olduğu için kararsız sonuçlara neden olabilir.
-          <svg id='exitAlert' class='cursor-pointer w-6 h-6 fill-current text-white'>
-            <path d={Utils.Icons.x} />
-          </svg>
+          <div class='flex space-x-2 items-center justify-center'>
+            <span class='text-red-200' id='exitTimer'>
+              9s
+            </span>
+            <svg id='exitAlert' class='cursor-pointer w-6 h-6 fill-current text-white'>
+              <path d={Utils.Icons.x} />
+            </svg>
+          </div>
         </span>
         <div class='flex-grow flex bg-purple-500'>
           <Components.Sidebar courses={props.courses} />
