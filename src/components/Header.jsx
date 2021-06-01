@@ -39,11 +39,8 @@ export default function Header(props) {
         </svg>
         <span>Blog</span>
       </a>
-      <a style='margin-left: auto' href='#' class='blink flex bg-purple-500 text-white rounded-2xl p-2 pl-4 space-x-1'>
-        <span>Eğitime Başla</span>
-        <svg class='w-6 h-6 fill-current text-white'>
-          <path d={Utils.Icons.arrowRight} />
-        </svg>
+      <a style='margin-left: auto' href='#' class='w-8 h-8 m-1'>
+        <img class='rounded-2xl' src='user.png' />
       </a>
     </div>
   )
