@@ -74,7 +74,8 @@ const courses = [
 var app = express()
 
 app.use(function (req, res, next) {
-  res.send(req.ip)
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
+  res.send(ip)
 })
 
 app.use(express.static(path.join(__dirname, 'static')))
