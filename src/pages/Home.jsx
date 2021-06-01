@@ -22,7 +22,7 @@ export default function Home(props) {
               <svg class='w-6 h-6 fill-current text-gray-300'>
                 <path d={Utils.Icons.search} />
               </svg>
-              <span class='flex-grow'>Bu akşam ne öğrenmek istersin?</span>
+              <span class='flex-grow text-gray-600 font-medium'>Bu akşam ne öğrenmek istersin?</span>
               <svg class='w-6 h-6 fill-current text-gray-300'>
                 <path d={Utils.Icons.mic} />
               </svg>
