@@ -6,8 +6,8 @@ export default function Home(props) {
     <html lang='tr' class='h-full'>
       <head>
         <title>Kuurs</title>
-        <link rel='stylesheet' href='home.css' />
         <link rel='stylesheet' href='index.css' />
+        <link rel='stylesheet' href='tailwind.css' />
       </head>
       <body class='flex bg-purple-500 h-full'>
         <Components.Sidebar courses={props.courses} />
