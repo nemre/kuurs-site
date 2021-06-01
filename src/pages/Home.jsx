@@ -6,6 +6,7 @@ export default function Home(props) {
     <html lang='tr' class='h-full'>
       <head>
         <title>Kuurs</title>
+        <link rel='stylesheet' href='home.css' />
         <link rel='stylesheet' href='index.css' />
       </head>
       <body class='flex bg-purple-500 h-full'>
