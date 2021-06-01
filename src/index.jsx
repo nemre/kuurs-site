@@ -73,7 +73,7 @@ const courses = [
 ]
 var app = express()
 
-app.use(function (req) {
+app.use(function (req, res, next) {
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
   if (ip == '85.110.105.223') {
     next()
