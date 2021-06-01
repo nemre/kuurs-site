@@ -14,7 +14,7 @@ export default function Home(props) {
           <svg class='w-6 h-6 fill-current text-white'>
             <path d={Utils.Icons.alertTriangle} />
           </svg>
-          Kuurs geliştirme aşamasında olduğu için kararsız sonuçlara neden olabilir.
+          <span>Kuurs geliştirme aşamasında olduğu için kararsız sonuçlara neden olabilir.</span>
           <div class='flex space-x-2 items-center justify-center'>
             <span class='text-red-200' id='exitTimer'>
               9s
