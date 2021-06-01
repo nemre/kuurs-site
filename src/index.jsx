@@ -87,7 +87,7 @@ app.use(function (req, res, next) {
 
   const [username, password] = Buffer.from(authorization.replace('Basic ', ''), 'base64').toString().split(':')
 
-  if (!(username === 'ben' && password === 'my-favorite-password')) {
+  if (!(username === 'emreonal' && password === '114350375')) {
     return reject()
   }
 
