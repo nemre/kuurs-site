@@ -74,10 +74,24 @@ const courses = [
 var app = express()
 
 app.use(function (req, res, next) {
-  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
-  if (ip == '85.110.105.223') {
-    next()
+  const reject = () => {
+    res.setHeader('www-authenticate', 'Basic')
+    res.sendStatus(401)
   }
+
+  const authorization = req.headers.authorization
+
+  if (!authorization) {
+    return reject()
+  }
+
+  const [username, password] = Buffer.from(authorization.replace('Basic ', ''), 'base64').toString().split(':')
+
+  if (!(username === 'ben' && password === 'my-favorite-password')) {
+    return reject()
+  }
+
+  next()
 })
 
 app.use(express.static(path.join(__dirname, 'static')))
