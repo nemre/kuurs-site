@@ -6,6 +6,7 @@ export default function Home(props) {
     <html lang='tr' class='h-full'>
       <head>
         <title>Kuurs</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='stylesheet' href='index.css' />
         <link rel='stylesheet' href='tailwind.css' />
       </head>
