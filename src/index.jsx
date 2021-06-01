@@ -73,6 +73,10 @@ const courses = [
 ]
 var app = express()
 
+app.use(function (req, res, next) {
+  res.send(req.ip)
+})
+
 app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
