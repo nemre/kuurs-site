@@ -39,7 +39,7 @@ export default function Header(props) {
         </svg>
         <span>Blog</span>
       </a>
-      <a style='margin-left: auto' href='#' class='w-8 h-8 m-1'>
+      <a style='margin-left: auto' href='#' class='w-10 h-10'>
         <img class='rounded-2xl' src='user.png' />
       </a>
     </div>
