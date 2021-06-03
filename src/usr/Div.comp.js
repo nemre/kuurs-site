@@ -2,71 +2,37 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Div = (props) => {
-  return (
-    <div
-      style={{
-        alignItems:
-          props.align == "Start"
-            ? "flex-start"
-            : props.align == "Center"
-            ? "center"
-            : props.align == "End"
-            ? "flex-end"
-            : "",
-        flexDirection:
-          props.direction == "Horizontal"
-            ? "row"
-            : props.direction == "Vertical"
-            ? "column"
-            : "",
-        display: props.display,
-        justifyContent:
-          props.distribute == "Start"
-            ? "flex-start"
-            : props.distribute == "Center"
-            ? "center"
-            : props.distribute == "End"
-            ? "flex-end"
-            : props.distribute == "Space Between"
-            ? "space-between"
-            : props.distribute == "Space Around"
-            ? "space-around"
-            : props.distribute == "Space Evenly"
-            ? "space-evenly"
-            : "",
-        backgroundColor: props.backgroundColor,
-        height: props.height,
-        margin: props.margin,
-        padding: props.padding,
-        borderRadius: props.radius,
-        width: props.width,
-      }}
-    >
-      {props.children}
-    </div>
-  );
+  return <div style={{ ...props }}>{props.children}</div>;
 };
 
 Div.propTypes = {
-  align: PropTypes.oneOf([" ", "Start", "Center", "End"]),
-  direction: PropTypes.oneOf([" ", "Horizontal", "Vertical"]),
-  display: PropTypes.oneOf([" ", "flex"]),
-  distribute: PropTypes.oneOf([
-    " ",
-    "Start",
-    "Center",
-    "End",
-    "Space Between",
-    "Space Around",
-    "Space Evenly",
-  ]),
-  backgroundColor: PropTypes.string,
-  height: PropTypes.string,
-  margin: PropTypes.string,
-  padding: PropTypes.string,
-  radius: PropTypes.string,
-  width: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
+  width: PropTypes.string,
+  height: PropTypes.string,
+  display: PropTypes.oneOf([" ", "flex"]),
+  overflow: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
+  overflowX: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
+  overflowY: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
+  flexDirection: PropTypes.oneOf([" ", "row", "column"]),
+  justifyContent: PropTypes.oneOf([
+    " ",
+    "start",
+    "center",
+    "end",
+    "space-between",
+    "space-around",
+    "space-evenly",
+  ]),
+  alignItems: PropTypes.oneOf([" ", "start", "center", "end"]),
+  padding: PropTypes.string,
+  margin: PropTypes.string,
+  borderRadius: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  fontWeight: PropTypes.string,
+  fontSize: PropTypes.string,
+  lineHeight: PropTypes.string,
+  textAlign: PropTypes.oneOf([" ", "left", "center", "right"]),
+  fontFamily: PropTypes.string,
 };
 
 export default Div;

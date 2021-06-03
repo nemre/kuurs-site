@@ -1,19 +1,18 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const Anchor = (props) => {
+const Span = (props) => {
   return (
-    <a href={props.href} style={{ ...props }}>
+    <span style={{ ...props }}>
       {props.content}
       {props.children}
-    </a>
+    </span>
   );
 };
 
-Anchor.propTypes = {
+Span.propTypes = {
   children: PropTypes.arrayOf(PropTypes.element),
   width: PropTypes.string,
-  href: PropTypes.string,
   height: PropTypes.string,
   display: PropTypes.oneOf([" ", "flex"]),
   overflow: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
@@ -42,4 +41,4 @@ Anchor.propTypes = {
   fontFamily: PropTypes.string,
 };
 
-export default Anchor;
+export default Span;
