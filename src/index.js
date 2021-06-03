@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Application from "@webcodesk/react-app-framework";
-import globalSettings from "./app/settings";
 
 let schema;
 let userComponents;
@@ -19,11 +18,6 @@ if (process.env.NODE_ENV !== "production") {
   userFunctions = require("./app/indices-prod/userFunctions").default;
 }
 
-/**
- * Using the application settings
- */
-console.info("Application Settings: ", JSON.stringify(globalSettings, null, 4));
-
 ReactDOM.render(
   <Application
     name={packageJson.name}
@@ -32,5 +26,5 @@ ReactDOM.render(
     userComponents={userComponents}
     userFunctions={userFunctions}
   />,
-  document.getElementById("root")
+  document.body
 );
