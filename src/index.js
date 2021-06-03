@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Application from "@webcodesk/react-app-framework";
 import globalSettings from "./app/settings";
-import * as serviceWorker from "./serviceWorker";
-import serviceWorkerConfig from "./serviceWorkerConfig";
 
 let schema;
 let userComponents;
