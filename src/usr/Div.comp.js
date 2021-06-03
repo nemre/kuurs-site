@@ -31,12 +31,12 @@ const Div = (props) => {
 };
 
 Div.propTypes = {
-  alignItems: PropTypes.oneOf([" ", "start", "center", "end"]),
+  alignItems: PropTypes.oneOf([" ", "center", "end", "start"]),
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
   display: PropTypes.oneOf([" ", "flex"]),
-  flexDirection: PropTypes.oneOf([" ", "row", "column"]),
+  flexDirection: PropTypes.oneOf([" ", "column", "row"]),
   fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
   fontWeight: PropTypes.string,
@@ -46,20 +46,20 @@ Div.propTypes = {
   }),
   justifyContent: PropTypes.oneOf([
     " ",
-    "start",
     "center",
     "end",
-    "space-between",
     "space-around",
+    "space-between",
     "space-evenly",
+    "start",
   ]),
   lineHeight: PropTypes.string,
   margin: PropTypes.string,
-  overflow: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
-  overflowX: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
-  overflowY: PropTypes.oneOf([" ", "auto", "hidden", "visible", "scroll"]),
+  overflow: PropTypes.oneOf([" ", "auto", "hidden", "scroll", "visible"]),
+  overflowX: PropTypes.oneOf([" ", "auto", "hidden", "scroll", "visible"]),
+  overflowY: PropTypes.oneOf([" ", "auto", "hidden", "scroll", "visible"]),
   padding: PropTypes.string,
-  textAlign: PropTypes.oneOf([" ", "left", "center", "right"]),
+  textAlign: PropTypes.oneOf([" ", "center", "left", "right"]),
   width: PropTypes.string,
 };
 
