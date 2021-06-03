@@ -5,6 +5,7 @@ const Svg = (props) => {
   return (
     <svg
       style={{
+        fill: props.fill,
         alignItems:
           props.align == "Start"
             ? "flex-start"
@@ -67,6 +68,7 @@ Svg.propTypes = {
   padding: PropTypes.string,
   radius: PropTypes.string,
   width: PropTypes.string,
+  fill: PropTypes.string,
 };
 
 export default Svg;
