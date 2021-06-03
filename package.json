@@ -1,23 +1,42 @@
 {
-  "dependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/plugin-transform-react-jsx": "^7.14.3",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-run": "^2.0.2",
-    "babel-plugin-wildcard": "^7.0.0",
-    "classnames": "^2.3.1",
-    "express": "^4.17.1",
-    "preact": "^10.5.13",
-    "preact-render-to-string": "^5.1.19",
-    "prettier": "^2.3.0",
-    "rollup": "^2.50.5",
-    "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-delete": "^2.0.0"
+  "name": "wcd-empty-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@webcodesk/react-app-framework": "2.0.28",
+    "@webcodesk/webcodesk-srv": "2.0.0",
+    "cross-env": "6.0.3",
+    "express": "4.17.1",
+    "lodash": "4.17.15",
+    "prop-types": "15.7.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-scripts": "3.2.0"
   },
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "format": "prettier -w .",
-    "start": "node dist"
+    "start": "cross-env PORT=3030 BROWSER=none react-scripts start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test --modulePaths=src",
+    "eject": "react-scripts eject",
+    "wcd": "webcodesk-srv -p 7070",
+    "server": "node ./server.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   }
 }
