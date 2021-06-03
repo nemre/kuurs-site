@@ -21,6 +21,9 @@ const StyledDiv = styled.div`
   line-height: ${(props) => props.lineHeight};
   text-align: ${(props) => props.textAlign};
   font-family: ${(props) => props.fontFamily};
+  &:hover {
+    background-color: ${(props) => props.hover.backgroundColor};
+  }
 `;
 
 const Div = (props) => {
@@ -28,6 +31,9 @@ const Div = (props) => {
 };
 
 Div.propTypes = {
+  hover: PropTypes.shape({
+    backgroundColor: PropTypes.string,
+  }),
   children: PropTypes.arrayOf(PropTypes.element),
   width: PropTypes.string,
   height: PropTypes.string,
