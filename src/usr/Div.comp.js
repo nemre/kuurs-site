@@ -6,6 +6,7 @@ const StyledDiv = styled.div`
   align-items: ${(props) => props.alignItems};
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
+  color: ${(props) => props.color};
   display: ${(props) => props.display};
   flex-direction: ${(props) => props.flexDirection};
   font-family: ${(props) => props.fontFamily};
@@ -20,6 +21,7 @@ const StyledDiv = styled.div`
   overflow: ${(props) => props.overflow};
   padding: ${(props) => props.padding};
   text-align: ${(props) => props.textAlign};
+  text-decoration: ${(props) => props.textDecoration};
   width: ${(props) => props.width};
   &:hover {
     background-color: ${(props) => props.hover.backgroundColor};
@@ -35,6 +37,7 @@ Div.propTypes = {
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
+  color: PropTypes.string,
   display: PropTypes.oneOf([" ", "flex"]),
   flexDirection: PropTypes.oneOf([" ", "column", "row"]),
   fontFamily: PropTypes.string,
@@ -60,6 +63,7 @@ Div.propTypes = {
   overflowY: PropTypes.oneOf([" ", "auto", "hidden", "scroll", "visible"]),
   padding: PropTypes.string,
   textAlign: PropTypes.oneOf([" ", "center", "left", "right"]),
+  textDecoration: PropTypes.oneOf([" ", "line-through", "none", "underline"]),
   width: PropTypes.string,
 };
 

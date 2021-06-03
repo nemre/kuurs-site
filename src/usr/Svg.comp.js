@@ -6,6 +6,7 @@ const StyledSvg = styled.svg`
   align-items: ${(props) => props.alignItems};
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
+  color: ${(props) => props.color};
   display: ${(props) => props.display};
   fill: ${(props) => props.fill};
   flex-direction: ${(props) => props.flexDirection};
@@ -21,6 +22,7 @@ const StyledSvg = styled.svg`
   overflow: ${(props) => props.overflow};
   padding: ${(props) => props.padding};
   text-align: ${(props) => props.textAlign};
+  text-decoration: ${(props) => props.textDecoration};
   width: ${(props) => props.width};
   &:hover {
     background-color: ${(props) => props.hover.backgroundColor};
@@ -39,6 +41,7 @@ Svg.propTypes = {
   alignItems: PropTypes.oneOf([" ", "center", "end", "start"]),
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
+  color: PropTypes.string,
   display: PropTypes.oneOf([" ", "flex"]),
   fill: PropTypes.string,
   flexDirection: PropTypes.oneOf([" ", "column", "row"]),
@@ -66,6 +69,7 @@ Svg.propTypes = {
   padding: PropTypes.string,
   path: PropTypes.string,
   textAlign: PropTypes.oneOf([" ", "center", "left", "right"]),
+  textDecoration: PropTypes.oneOf([" ", "line-through", "none", "underline"]),
   width: PropTypes.string,
 };
 
