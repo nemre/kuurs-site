@@ -3,13 +3,28 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  display: ${(props) => props.display};
+  overflow: ${(props) => props.overflow};
+  overflow-x: ${(props) => props.overflowX};
+  overflow-y: ${(props) => props.overflowY};
+  flex-direction: ${(props) => props.flexDirection};
+  justify-content: ${(props) => props.justifyContent};
+  align-items: ${(props) => props.alignItems};
+  padding: ${(props) => props.padding};
+  margin: ${(props) => props.margin};
+  border-radius: ${(props) => props.borderRadius};
+  background-color: ${(props) => props.backgroundColor};
+  font-weight: ${(props) => props.fontWeight};
+  font-size: ${(props) => props.fontSize};
+  line-height: ${(props) => props.lineHeight};
+  text-align: ${(props) => props.textAlign};
+  font-family: ${(props) => props.fontFamily};
 `;
 
 const Div = (props) => {
-  return <StyledDiv />;
+  return <StyledDiv {...props} />;
 };
 
 Div.propTypes = {
