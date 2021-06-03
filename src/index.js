@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Application from "@webcodesk/react-app-framework";
+import "./index.css";
 
 let schema;
 let userComponents;
