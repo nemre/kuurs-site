@@ -7,6 +7,7 @@ const StyledSvg = styled.svg`
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
   display: ${(props) => props.display};
+  fill: ${(props) => props.fill};
   flex-direction: ${(props) => props.flexDirection};
   font-family: ${(props) => props.fontFamily};
   font-size: ${(props) => props.fontSize};
@@ -39,6 +40,7 @@ Svg.propTypes = {
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   display: PropTypes.oneOf([" ", "flex"]),
+  fill: PropTypes.string,
   flexDirection: PropTypes.oneOf([" ", "column", "row"]),
   fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
