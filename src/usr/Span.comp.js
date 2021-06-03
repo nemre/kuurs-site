@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
+const StyledSpan = styled.span`
   align-items: ${(props) => props.alignItems};
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
@@ -26,15 +26,21 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Div = (props) => {
-  return <StyledDiv {...props}>{props.children}</StyledDiv>;
+const Span = (props) => {
+  return (
+    <StyledSpan {...props}>
+      {props.children}
+      {props.content}
+    </StyledSpan>
+  );
 };
 
-Div.propTypes = {
+Span.propTypes = {
   alignItems: PropTypes.oneOf([" ", "center", "end", "start"]),
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
+  content: PropTypes.string,
   display: PropTypes.oneOf([" ", "flex"]),
   flexDirection: PropTypes.oneOf([" ", "column", "row"]),
   fontFamily: PropTypes.string,
@@ -63,4 +69,4 @@ Div.propTypes = {
   width: PropTypes.string,
 };
 
-export default Div;
+export default Span;

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
+const StyledSvg = styled.svg`
   align-items: ${(props) => props.alignItems};
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
@@ -26,15 +26,18 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Div = (props) => {
-  return <StyledDiv {...props}>{props.children}</StyledDiv>;
+const Svg = (props) => {
+  return (
+    <StyledSvg {...props}>
+      <path d={props.path} />
+    </StyledSvg>
+  );
 };
 
-Div.propTypes = {
+Svg.propTypes = {
   alignItems: PropTypes.oneOf([" ", "center", "end", "start"]),
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.element),
   display: PropTypes.oneOf([" ", "flex"]),
   flexDirection: PropTypes.oneOf([" ", "column", "row"]),
   fontFamily: PropTypes.string,
@@ -59,8 +62,9 @@ Div.propTypes = {
   overflowX: PropTypes.oneOf([" ", "auto", "hidden", "scroll", "visible"]),
   overflowY: PropTypes.oneOf([" ", "auto", "hidden", "scroll", "visible"]),
   padding: PropTypes.string,
+  path: PropTypes.string,
   textAlign: PropTypes.oneOf([" ", "center", "left", "right"]),
   width: PropTypes.string,
 };
 
-export default Div;
+export default Svg;

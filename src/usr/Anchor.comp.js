@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
+const StyledAnchor = styled.a`
   align-items: ${(props) => props.alignItems};
   background-color: ${(props) => props.backgroundColor};
   border-radius: ${(props) => props.borderRadius};
@@ -26,21 +26,28 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Div = (props) => {
-  return <StyledDiv {...props}>{props.children}</StyledDiv>;
+const Anchor = (props) => {
+  return (
+    <StyledAnchor href={props.href} {...props}>
+      {props.children}
+      {props.content}
+    </StyledAnchor>
+  );
 };
 
-Div.propTypes = {
+Anchor.propTypes = {
   alignItems: PropTypes.oneOf([" ", "center", "end", "start"]),
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
+  content: PropTypes.string,
   display: PropTypes.oneOf([" ", "flex"]),
   flexDirection: PropTypes.oneOf([" ", "column", "row"]),
   fontFamily: PropTypes.string,
   fontSize: PropTypes.string,
   fontWeight: PropTypes.string,
   height: PropTypes.string,
+  href: PropTypes.string,
   hover: PropTypes.shape({
     backgroundColor: PropTypes.string,
   }),
@@ -63,4 +70,4 @@ Div.propTypes = {
   width: PropTypes.string,
 };
 
-export default Div;
+export default Anchor;
