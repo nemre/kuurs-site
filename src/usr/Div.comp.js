@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import React from "react";
+import styled from "styled-components";
+
+const StyledDiv = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: red;
+`;
 
 const Div = (props) => {
-  return <div style={{ ...props }}>{props.children}</div>;
+  return <StyledDiv />;
 };
 
 Div.propTypes = {
