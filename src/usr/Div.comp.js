@@ -29,10 +29,17 @@ const StyledDiv = styled.div`
 `;
 
 const Div = (props) => {
-  return <StyledDiv {...props}>{props.children}</StyledDiv>;
+  return (
+    <StyledDiv as={props.tag} d={props.path} href={props.href} {...props}>
+      {props.children}
+    </StyledDiv>
+  );
 };
 
 Div.propTypes = {
+  path: PropTypes.string,
+  href: PropTypes.string,
+  tag: PropTypes.oneOf(["div", "a", "svg", "path", "span"]),
   alignItems: PropTypes.oneOf([" ", "center", "end", "start"]),
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
