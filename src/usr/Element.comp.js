@@ -9,6 +9,7 @@ const StyledDiv = styled.div`
   color: ${(props) => props.color};
   display: ${(props) => props.display};
   flex-direction: ${(props) => props.flexDirection};
+  fill: ${(props) => props.fill};
   font-family: ${(props) => props.fontFamily};
   font-size: ${(props) => props.fontSize};
   font-weight: ${(props) => props.fontWeight};
@@ -28,7 +29,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const Div = (props) => {
+const Element = (props) => {
   return (
     <StyledDiv as={props.tag} d={props.path} href={props.href} {...props}>
       {props.children}
@@ -36,7 +37,8 @@ const Div = (props) => {
   );
 };
 
-Div.propTypes = {
+Element.propTypes = {
+  fill: PropTypes.string,
   path: PropTypes.string,
   href: PropTypes.string,
   tag: PropTypes.oneOf(["div", "a", "svg", "path", "span"]),
@@ -74,4 +76,4 @@ Div.propTypes = {
   width: PropTypes.string,
 };
 
-export default Div;
+export default Element;

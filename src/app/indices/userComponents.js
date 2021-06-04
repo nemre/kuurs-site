@@ -1,2 +1,2 @@
 
-export default {'usr':{'Div':require('usr/Div.comp').default,},};
+export default {'usr':{'Element':require('usr/Element.comp').default,},};
