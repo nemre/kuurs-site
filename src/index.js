@@ -1,6 +1,6 @@
 import express from 'express'
 import render from 'preact-render-to-string'
-import Home from './pages/home'
+import Courses from './pages/courses'
 import path from 'path'
 
 var app = express()
@@ -8,7 +8,7 @@ var app = express()
 app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
-  res.send('<!doctype html>' + render(<Home />))
+  res.send('<!doctype html>' + render(<Courses />))
 })
 
 app.listen(process.env.PORT || 80, function () {
