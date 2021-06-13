@@ -11,7 +11,7 @@ export default function (props) {
         <meta content="initial-scale=1, width=device-width" name="viewport" />
       </head>
       <body>
-        <Sidebar items={props.courses} />
+        <Sidebar items={props.sidebarItems} />
         <div>
           <Header pages={props.pages} />
           <div>{props.children}</div>

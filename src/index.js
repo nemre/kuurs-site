@@ -7,6 +7,15 @@ import express from 'express'
 import path from 'path'
 import render from 'preact-render-to-string'
 
+var tools = [
+  {
+    color: 'ff6550',
+    icon: 'M22.23 4.702c-0.535 0-0.967-0.433-0.967-0.967 0-0.535 0.433-0.967 0.967-0.967s0.967 0.433 0.967 0.967c0.001 0.534-0.433 0.967-0.967 0.967zM12.622 21.233c-0.535 0-0.967-0.433-0.967-0.967 0-0.535 0.433-0.967 0.967-0.967s0.967 0.433 0.967 0.967c-0.001 0.533-0.433 0.967-0.967 0.967zM22.23 1.964c-0.978 0-1.771 0.793-1.771 1.771 0 0.209 0.053 0.403 0.119 0.589l-8.309 14.241c-0.803 0.168-1.418 0.847-1.418 1.7 0 0.978 0.793 1.771 1.771 1.771 0.977 0 1.77-0.793 1.77-1.771 0-0.197-0.053-0.376-0.111-0.553l8.351-14.288c0.779-0.187 1.37-0.854 1.37-1.69-0.001-0.977-0.794-1.77-1.772-1.77zM14.983 4.702c-0.535 0-0.967-0.433-0.967-0.967 0-0.535 0.433-0.967 0.967-0.967s0.967 0.433 0.967 0.967-0.433 0.967-0.967 0.967zM5.374 21.233c-0.534 0-0.967-0.433-0.967-0.967 0-0.535 0.433-0.967 0.967-0.967 0.535 0 0.967 0.433 0.967 0.967 0 0.533-0.433 0.967-0.967 0.967zM14.983 1.964c-0.979 0-1.771 0.793-1.771 1.771 0 0.209 0.053 0.403 0.119 0.589l-8.309 14.241c-0.804 0.168-1.419 0.847-1.419 1.7 0 0.978 0.793 1.771 1.771 1.771s1.771-0.793 1.771-1.771c0-0.197-0.053-0.376-0.111-0.553l8.351-14.288c0.779-0.187 1.37-0.854 1.37-1.69-0.001-0.977-0.794-1.77-1.772-1.77zM1.749 7.663c0.534 0 0.967 0.433 0.967 0.967s-0.433 0.967-0.967 0.967-0.967-0.432-0.967-0.966 0.433-0.968 0.967-0.968zM1.749 6.883c-0.964 0-1.748 0.784-1.748 1.748s0.784 1.748 1.748 1.748 1.748-0.784 1.748-1.748-0.784-1.748-1.748-1.748zM1.749 13.852c0.534 0 0.967 0.433 0.967 0.967s-0.433 0.967-0.967 0.967-0.967-0.433-0.967-0.967 0.433-0.967 0.967-0.967zM1.749 13.072c-0.964 0-1.748 0.784-1.748 1.748s0.784 1.748 1.748 1.748 1.748-0.784 1.748-1.748-0.784-1.748-1.748-1.748z',
+    name: 'Curl',
+    url: 'araclar/curl',
+  },
+]
+
 var courses = [
   {
     color: 'dd0031',
@@ -115,29 +124,33 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 app.get('/', (req, res) => {
   res.send(
-    '<!doctype html>' + render(<Courses courses={courses} pages={pages} />)
+    '<!doctype html>' + render(<Courses sidebarItems={courses} pages={pages} />)
   )
 })
 
 app.get('/araclar', (req, res) => {
   res.send(
-    '<!doctype html>' + render(<Tools courses={courses} pages={pages} />)
+    '<!doctype html>' + render(<Tools sidebarItems={tools} pages={pages} />)
   )
 })
 
 app.get('/magaza', (req, res) => {
-  res.send('<!doctype html>' + render(<Shop courses={courses} pages={pages} />))
+  res.send(
+    '<!doctype html>' + render(<Shop sidebarItems={courses} pages={pages} />)
+  )
 })
 
 app.get('/makaleler', (req, res) => {
   res.send(
-    '<!doctype html>' + render(<Articles courses={courses} pages={pages} />)
+    '<!doctype html>' +
+      render(<Articles sidebarItems={courses} pages={pages} />)
   )
 })
 
 app.get('/sorular', (req, res) => {
   res.send(
-    '<!doctype html>' + render(<Questions courses={courses} pages={pages} />)
+    '<!doctype html>' +
+      render(<Questions sidebarItems={courses} pages={pages} />)
   )
 })
 
