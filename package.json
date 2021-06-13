@@ -16,7 +16,8 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "dev": "rollup -c -w",
     "format": "prettier -w .",
-    "start": "rollup -c -w"
+    "start": "node dist"
   }
 }
