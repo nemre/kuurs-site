@@ -1,5 +1,9 @@
 import Layout from '../../components/layout/index.js'
 
-export default function () {
-  return <Layout>Articles</Layout>
+export default function (props) {
+  return (
+    <Layout courses={props.courses} pages={props.pages}>
+      Articles
+    </Layout>
+  )
 }

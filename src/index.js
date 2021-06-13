@@ -120,19 +120,25 @@ app.get('/', (req, res) => {
 })
 
 app.get('/araclar', (req, res) => {
-  res.send('<!doctype html>' + render(<Tools />))
+  res.send(
+    '<!doctype html>' + render(<Tools courses={courses} pages={pages} />)
+  )
 })
 
 app.get('/magaza', (req, res) => {
-  res.send('<!doctype html>' + render(<Shop />))
+  res.send('<!doctype html>' + render(<Shop courses={courses} pages={pages} />))
 })
 
 app.get('/makaleler', (req, res) => {
-  res.send('<!doctype html>' + render(<Articles />))
+  res.send(
+    '<!doctype html>' + render(<Articles courses={courses} pages={pages} />)
+  )
 })
 
 app.get('/sorular', (req, res) => {
-  res.send('<!doctype html>' + render(<Questions />))
+  res.send(
+    '<!doctype html>' + render(<Questions courses={courses} pages={pages} />)
+  )
 })
 
 app.listen(process.env.PORT || 80, function () {
