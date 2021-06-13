@@ -8,12 +8,12 @@ export default function (props) {
       <head>
         <link href="index.css" rel="stylesheet" />
         <title>Kuurs</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="initial-scale=1, width=device-width" name="viewport" />
       </head>
       <body>
-        <Sidebar />
+        <Sidebar items={props.courses} />
         <div>
-          <Header />
+          <Header pages={props.pages} />
           <div>{props.children}</div>
         </div>
       </body>
