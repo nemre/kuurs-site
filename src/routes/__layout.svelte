@@ -1,3 +1,15 @@
+<script>
+	let courses = [
+		{ name: 'Angular', color: 'dd0031' },
+		{ name: 'Svelte', color: 'ff3e00' },
+		{ name: 'React', color: '61dafb' },
+		{ name: 'Sass', color: 'cc6699' },
+		{ name: 'Git', color: 'f05032' },
+		{ name: 'Framer', color: '0055ff' },
+		{ name: 'MongoDB', color: '47a248' }
+	];
+</script>
+
 <div class="sidebar">
 	<a class="sidebar-logo" href="/">
 		<svg class="sidebar-logo-svg">
@@ -5,48 +17,14 @@
 		</svg>
 	</a>
 	<div class="sidebar-courses">
-		<a class="sidebar-courses-a" href="/angular">
-			<svg class="sidebar-courses-a-svg" style="background:#dd003120">
-				<use xlink:href="icons.svg#angular" />
-			</svg>
-			<span class="sidebar-courses-a-span">Angular</span>
-		</a>
-		<a class="sidebar-courses-a" href="/svelte">
-			<svg class="sidebar-courses-a-svg" style="background:#ff3e0020">
-				<use xlink:href="icons.svg#svelte" />
-			</svg>
-			<span class="sidebar-courses-a-span">Svelte</span>
-		</a>
-		<a class="sidebar-courses-a" href="/react">
-			<svg class="sidebar-courses-a-svg" style="background:#61dafb20">
-				<use xlink:href="icons.svg#react" />
-			</svg>
-			<span class="sidebar-courses-a-span">React</span>
-		</a>
-		<a class="sidebar-courses-a" href="/sass">
-			<svg class="sidebar-courses-a-svg" style="background:#cc669920">
-				<use xlink:href="icons.svg#sass" />
-			</svg>
-			<span class="sidebar-courses-a-span">Sass</span>
-		</a>
-		<a class="sidebar-courses-a" href="/git">
-			<svg class="sidebar-courses-a-svg" style="background:#f0503220">
-				<use xlink:href="icons.svg#git" />
-			</svg>
-			<span class="sidebar-courses-a-span">Git</span>
-		</a>
-		<a class="sidebar-courses-a" href="/framer">
-			<svg class="sidebar-courses-a-svg" style="background:#0055ff20">
-				<use xlink:href="icons.svg#framer" />
-			</svg>
-			<span class="sidebar-courses-a-span">Framer</span>
-		</a>
-		<a class="sidebar-courses-a" href="/mongodb">
-			<svg class="sidebar-courses-a-svg" style="background:#47a24820">
-				<use xlink:href="icons.svg#mongodb" />
-			</svg>
-			<span class="sidebar-courses-a-span">MongoDB</span>
-		</a>
+		{#each courses as course}
+			<a class="sidebar-courses-a" href={course.name.toLowerCase()}>
+				<svg class="sidebar-courses-a-svg" style="background:#{course.color}20">
+					<use xlink:href="icons.svg#{course.name.toLowerCase()}" />
+				</svg>
+				<span class="sidebar-courses-a-span">{course.name}</span>
+			</a>
+		{/each}
 	</div>
 	<a class="sidebar-settings" href="/ayarlar">
 		<svg class="sidebar-settings-svg">
