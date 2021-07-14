@@ -1,7 +1,3 @@
-<script>
-	import '../app.css';
-</script>
-
 <div class="sidebar">
 	<a class="sidebar-logo" href="/">
 		<svg class="sidebar-logo-svg">
@@ -90,41 +86,24 @@
 			</svg>
 			<span class="content-header-a-span">Mağaza</span>
 		</a>
-		<a href="/" class="content-header-login"><span>E</span>Emre Önal</a>
 	</div>
 	<slot />
 </div>
 
 <style>
-	.content-header-login {
-		display: flex;
-		margin-left: auto;
-		font-weight: 700;
-		background: #fff;
-		border-radius: 1rem;
-		line-height: 36px;
-		padding: 0 0.5rem;
-		padding-right: 1rem;
-		text-decoration: none;
-		color: #333;
-		align-items: center;
-		font-size: 16px;
-		margin-right: 0.75rem;
+	::-webkit-scrollbar {
+		width: 0;
 	}
 
-	.content-header-login span {
+	:global(html) {
+		height: 100%;
+	}
+
+	:global(body) {
 		display: flex;
-		border-radius: 1rem;
-		background-color: orangered;
-		line-height: 24px;
-		color: #fff;
-		width: 24px;
-		height: 24px;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
-		font-weight: 700;
-		margin-right: 0.5rem;
+		height: 100%;
+		font-family: Segoe UI;
+		margin: 0;
 	}
 
 	.sidebar {
