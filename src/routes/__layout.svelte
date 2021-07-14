@@ -18,7 +18,7 @@
 	</a>
 	<div class="sidebar-courses">
 		{#each courses as course}
-			<a class="sidebar-courses-a" href={course.name.toLowerCase()}>
+			<a sveltekit:prefetch class="sidebar-courses-a" href={course.name.toLowerCase()}>
 				<svg class="sidebar-courses-a-svg" style="background:#{course.color}20">
 					<use xlink:href="icons.svg#{course.name.toLowerCase()}" />
 				</svg>
@@ -34,31 +34,31 @@
 </div>
 <div class="content">
 	<div class="content-header">
-		<a class="content-header-a" href="/">
+		<a sveltekit:prefetch class="content-header-a" href="/">
 			<svg class="content-header-a-svg">
 				<use xlink:href="icons.svg#video" />
 			</svg>
 			<span class="content-header-a-span">Kurslar</span>
 		</a>
-		<a class="content-header-a" href="/sorular">
+		<a sveltekit:prefetch class="content-header-a" href="/sorular">
 			<svg class="content-header-a-svg">
 				<use xlink:href="icons.svg#help-circle" />
 			</svg>
 			<span class="content-header-a-span">Sorular</span>
 		</a>
-		<a class="content-header-a" href="/araclar">
+		<a sveltekit:prefetch class="content-header-a" href="/araclar">
 			<svg class="content-header-a-svg">
 				<use xlink:href="icons.svg#briefcase" />
 			</svg>
 			<span class="content-header-a-span">Araçlar</span>
 		</a>
-		<a class="content-header-a" href="/makaleler">
+		<a sveltekit:prefetch class="content-header-a" href="/makaleler">
 			<svg class="content-header-a-svg">
 				<use xlink:href="icons.svg#file-text" />
 			</svg>
 			<span class="content-header-a-span">Makaleler</span>
 		</a>
-		<a class="content-header-a" href="/magaza">
+		<a sveltekit:prefetch class="content-header-a" href="/magaza">
 			<svg class="content-header-a-svg">
 				<use xlink:href="icons.svg#shopping-bag" />
 			</svg>
@@ -94,7 +94,7 @@
 		display: flex;
 		padding: 0.5rem;
 		border-radius: 1rem;
-		margin: 1rem 1.75rem;
+		margin: 1rem 1.5rem;
 	}
 
 	.sidebar-logo:hover {
@@ -137,7 +137,7 @@
 		color: #000;
 		font-weight: 700;
 		line-height: 1.5rem;
-		width: 64px;
+		width: 56px;
 		text-align: center;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -147,7 +147,7 @@
 		display: flex;
 		padding: 0.5rem;
 		border-radius: 1rem;
-		margin: 1rem 1.75rem;
+		margin: 1rem 1.5rem;
 	}
 
 	.sidebar-settings:hover {
@@ -163,6 +163,8 @@
 		flex-grow: 1;
 		background: #6200ea;
 		border-radius: 1rem 0 0 1rem;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.content-header {
@@ -176,7 +178,7 @@
 		padding: 0.5rem 1rem;
 		text-decoration: none;
 		border-radius: 1rem;
-		margin: 0 0.75rem;
+		margin: 0 0.5rem;
 	}
 
 	.content-header-a:hover {
