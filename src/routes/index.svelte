@@ -12,58 +12,68 @@
 	<title>İnteraktif Öğrenme Platformu - Kuurs</title>
 </svelte:head>
 
-<div class="hero">
-	<div class="hero-left">
-		<h1 class="hero-left-h1">
-			Tamamen <strong class="hero-left-h1-strong">Ücretsiz</strong> Kursların<br />Deneyimini Burada
-			Yaşayın!
-		</h1>
-		<div class="hero-left-search">
-			<button class="hero-left-search-left" aria-label="Arama Butonu">
-				<svg class="hero-left-search-left-svg">
-					<use xlink:href="icons.svg#search" />
-				</svg>
-			</button>
-			<input
-				type="text"
-				class="hero-left-search-input"
-				placeholder="Bu {timeOfDay()} ne öğrenmek istersin?"
-			/>
-			<button class="hero-left-search-right" aria-label="Mikrofon Butonu">
-				<svg class="hero-left-search-right-svg">
-					<use xlink:href="icons.svg#mic" />
-				</svg>
-			</button>
-		</div>
-	</div>
-	<div class="hero-right">Right Area</div>
-</div>
-
 <div class="main">
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
-	<h1>Lorem Ipsum dolor</h1>
+	<div class="hero">
+		<div class="hero-left">
+			<h1 class="hero-left-h1">
+				Tamamen <strong class="hero-left-h1-strong">Ücretsiz</strong> Kursların<br />Deneyimini
+				Burada Yaşayın!
+			</h1>
+			<div class="hero-left-search">
+				<button class="hero-left-search-left" aria-label="Arama Butonu">
+					<svg class="hero-left-search-left-svg">
+						<use xlink:href="icons.svg#search" />
+					</svg>
+				</button>
+				<input
+					type="text"
+					class="hero-left-search-input"
+					placeholder="Bu {timeOfDay()} ne öğrenmek istersin?"
+				/>
+				<button class="hero-left-search-right" aria-label="Mikrofon Butonu">
+					<svg class="hero-left-search-right-svg">
+						<use xlink:href="icons.svg#mic" />
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="hero-right">Right Area</div>
+	</div>
+
+	<div class="section">
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+		<h1>Lorem Ipsum dolor</h1>
+	</div>
 </div>
 
 <style>
 	.main {
+		border-top-right-radius: 1rem;
+		border-top-left-radius: 1rem;
+		position: fixed;
+		overflow-y: auto;
+		width: 100%;
+		top: 72px;
+		bottom: 0;
+	}
+
+	.section {
 		display: flex;
 		flex-direction: column;
 		background: #efefef;
 		border-radius: 1rem 1rem 0 0;
 		line-height: 80px;
 		text-align: center;
-		overflow-y: auto;
-		flex-grow: 1;
 	}
 
 	.hero {
