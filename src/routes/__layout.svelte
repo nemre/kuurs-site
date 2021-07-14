@@ -21,6 +21,36 @@
 			</svg>
 			<span class="sidebar-courses-a-span">Svelte</span>
 		</a>
+		<a class="sidebar-courses-a" href="/react">
+			<svg class="sidebar-courses-a-svg" style="background:#61dafb20">
+				<use xlink:href="icons.svg#react" />
+			</svg>
+			<span class="sidebar-courses-a-span">React</span>
+		</a>
+		<a class="sidebar-courses-a" href="/sass">
+			<svg class="sidebar-courses-a-svg" style="background:#cc669920">
+				<use xlink:href="icons.svg#sass" />
+			</svg>
+			<span class="sidebar-courses-a-span">Sass</span>
+		</a>
+		<a class="sidebar-courses-a" href="/git">
+			<svg class="sidebar-courses-a-svg" style="background:#f0503220">
+				<use xlink:href="icons.svg#git" />
+			</svg>
+			<span class="sidebar-courses-a-span">Git</span>
+		</a>
+		<a class="sidebar-courses-a" href="/framer">
+			<svg class="sidebar-courses-a-svg" style="background:#0055ff20">
+				<use xlink:href="icons.svg#framer" />
+			</svg>
+			<span class="sidebar-courses-a-span">Framer</span>
+		</a>
+		<a class="sidebar-courses-a" href="/mongodb">
+			<svg class="sidebar-courses-a-svg" style="background:#47a24820">
+				<use xlink:href="icons.svg#mongodb" />
+			</svg>
+			<span class="sidebar-courses-a-span">MongoDB</span>
+		</a>
 	</div>
 	<a class="sidebar-settings" href="/ayarlar">
 		<svg class="sidebar-settings-svg">
@@ -29,11 +59,74 @@
 	</a>
 </div>
 <div class="content">
-	<div class="content-header" />
+	<div class="content-header">
+		<a class="content-header-a" href="/">
+			<svg class="content-header-a-svg">
+				<use xlink:href="icons.svg#video" />
+			</svg>
+			<span class="content-header-a-span">Kurslar</span>
+		</a>
+		<a class="content-header-a" href="/sorular">
+			<svg class="content-header-a-svg">
+				<use xlink:href="icons.svg#help-circle" />
+			</svg>
+			<span class="content-header-a-span">Sorular</span>
+		</a>
+		<a class="content-header-a" href="/araclar">
+			<svg class="content-header-a-svg">
+				<use xlink:href="icons.svg#briefcase" />
+			</svg>
+			<span class="content-header-a-span">Araçlar</span>
+		</a>
+		<a class="content-header-a" href="/makaleler">
+			<svg class="content-header-a-svg">
+				<use xlink:href="icons.svg#file-text" />
+			</svg>
+			<span class="content-header-a-span">Makaleler</span>
+		</a>
+		<a class="content-header-a" href="/magaza">
+			<svg class="content-header-a-svg">
+				<use xlink:href="icons.svg#shopping-bag" />
+			</svg>
+			<span class="content-header-a-span">Mağaza</span>
+		</a>
+		<a href="/" class="content-header-login"><span>E</span>Emre Önal</a>
+	</div>
 	<slot />
 </div>
 
 <style>
+	.content-header-login {
+		display: flex;
+		margin-left: auto;
+		font-weight: 700;
+		background: #fff;
+		border-radius: 1rem;
+		line-height: 36px;
+		padding: 0 0.5rem;
+		padding-right: 1rem;
+		text-decoration: none;
+		color: #333;
+		align-items: center;
+		font-size: 16px;
+		margin-right: 0.75rem;
+	}
+
+	.content-header-login span {
+		display: flex;
+		border-radius: 1rem;
+		background-color: orangered;
+		line-height: 24px;
+		color: #fff;
+		width: 24px;
+		height: 24px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		margin-right: 0.5rem;
+	}
+
 	.sidebar {
 		display: flex;
 		flex-direction: column;
@@ -116,5 +209,32 @@
 	}
 
 	.content-header {
+		display: flex;
+		margin: 1rem;
+		align-items: center;
+	}
+
+	.content-header-a {
+		display: flex;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+		border-radius: 1rem;
+		margin: 0 0.75rem;
+	}
+
+	.content-header-a:hover {
+		background: #00000020;
+	}
+
+	.content-header-a-svg {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	.content-header-a-span {
+		margin-left: 0.5rem;
+		line-height: 1.5rem;
+		color: #fff;
+		font-weight: 700;
 	}
 </style>
