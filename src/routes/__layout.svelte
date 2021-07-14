@@ -11,7 +11,7 @@
 </script>
 
 <div class="sidebar">
-	<a class="sidebar-logo" href="/">
+	<a class="sidebar-logo" href="/" aria-label="Anasayfa Linki">
 		<svg class="sidebar-logo-svg">
 			<use xlink:href="icons.svg#kuurs" />
 		</svg>
@@ -26,7 +26,7 @@
 			</a>
 		{/each}
 	</div>
-	<a class="sidebar-settings" href="/ayarlar">
+	<a class="sidebar-settings" href="/ayarlar" aria-label="Ayarlar Linki">
 		<svg class="sidebar-settings-svg">
 			<use xlink:href="icons.svg#settings" />
 		</svg>
@@ -80,7 +80,8 @@
 	:global(body) {
 		display: flex;
 		height: 100%;
-		font-family: Segoe UI;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+			'Open Sans', 'Helvetica Neue', sans-serif;
 		margin: 0;
 	}
 
@@ -95,6 +96,7 @@
 		padding: 0.5rem;
 		border-radius: 1rem;
 		margin: 1rem 1.5rem;
+		flex-shrink: 0;
 	}
 
 	.sidebar-logo:hover {
@@ -120,6 +122,7 @@
 		border-radius: 1rem;
 		align-items: center;
 		text-decoration: none;
+		flex-shrink: 0;
 	}
 
 	.sidebar-courses-a:hover {
@@ -148,6 +151,7 @@
 		padding: 0.5rem;
 		border-radius: 1rem;
 		margin: 1rem 1.5rem;
+		flex-shrink: 0;
 	}
 
 	.sidebar-settings:hover {
@@ -171,6 +175,7 @@
 		display: flex;
 		margin: 1rem;
 		align-items: center;
+		flex-shrink: 0;
 	}
 
 	.content-header-a {
@@ -194,6 +199,6 @@
 		margin-left: 0.5rem;
 		line-height: 1.5rem;
 		color: #fff;
-		font-weight: 700;
+		font-weight: bold;
 	}
 </style>

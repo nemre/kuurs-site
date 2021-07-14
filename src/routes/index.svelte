@@ -19,7 +19,7 @@
 			Yaşayın!
 		</h1>
 		<div class="hero-left-search">
-			<button class="hero-left-search-left">
+			<button class="hero-left-search-left" aria-label="Arama Butonu">
 				<svg class="hero-left-search-left-svg">
 					<use xlink:href="icons.svg#search" />
 				</svg>
@@ -29,7 +29,7 @@
 				class="hero-left-search-input"
 				placeholder="Bu {timeOfDay()} ne öğrenmek istersin?"
 			/>
-			<button class="hero-left-search-right">
+			<button class="hero-left-search-right" aria-label="Mikrofon Butonu">
 				<svg class="hero-left-search-right-svg">
 					<use xlink:href="icons.svg#mic" />
 				</svg>
@@ -39,18 +39,37 @@
 	<div class="hero-right">Right Area</div>
 </div>
 
-<div class="main">Lorem Ipsum Dolor</div>
+<div class="main">
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+	<h1>Lorem Ipsum dolor</h1>
+</div>
 
 <style>
 	.main {
+		display: flex;
+		flex-direction: column;
 		background: #efefef;
 		border-radius: 1rem 1rem 0 0;
-		line-height: 400px;
+		line-height: 80px;
+		text-align: center;
+		overflow-y: auto;
+		flex-grow: 1;
 	}
 
 	.hero {
 		display: flex;
 		margin: 1rem 2.5rem 2.5rem;
+		flex-shrink: 0;
 	}
 
 	.hero-left {
@@ -78,6 +97,7 @@
 		fill: #fff;
 		align-items: center;
 		padding: 0.5rem;
+		flex-shrink: 0;
 	}
 
 	.hero-left-search-left {
