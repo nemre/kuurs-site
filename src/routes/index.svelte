@@ -60,11 +60,7 @@
 	.main {
 		border-top-right-radius: 1rem;
 		border-top-left-radius: 1rem;
-		position: fixed;
 		overflow-y: auto;
-		width: 100%;
-		top: 72px;
-		bottom: 0;
 	}
 
 	.section {
