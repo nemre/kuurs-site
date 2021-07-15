@@ -73,13 +73,13 @@
 		width: 0;
 	}
 
-	:global(html) {
-		height: 100%;
-	}
-
 	:global(body) {
 		display: flex;
-		height: 100%;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 			'Open Sans', 'Helvetica Neue', sans-serif;
 		margin: 0;
