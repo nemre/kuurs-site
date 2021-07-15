@@ -69,7 +69,7 @@
 </div>
 
 <style>
-	::-webkit-scrollbar {
+	:global(::-webkit-scrollbar) {
 		width: 0;
 	}
 
