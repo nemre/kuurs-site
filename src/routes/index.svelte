@@ -41,18 +41,8 @@
 	</div>
 
 	<div class="section">
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
-		<h1>Lorem Ipsum dolor</h1>
+		<img src="/demo1.png" />
+		<img src="/demo2.png" />
 	</div>
 </div>
 
@@ -69,7 +59,6 @@
 		flex-direction: column;
 		background: #efefef;
 		border-radius: 1rem 1rem 0 0;
-		line-height: 80px;
 		text-align: center;
 	}
 
