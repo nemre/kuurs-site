@@ -14,10 +14,11 @@
 </script>
 
 <Sidebar {courses} />
-
 <div class="content">
 	<Header />
-	<slot />
+	<div class="main">
+		<slot />
+	</div>
 </div>
 
 <style>
@@ -26,22 +27,29 @@
 	}
 
 	:global(body) {
-		display: flex;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 			'Open Sans', 'Helvetica Neue', sans-serif;
+		position: fixed;
+		display: flex;
+		bottom: 0;
 		margin: 0;
+		right: 0;
+		left: 0;
+		top: 0;
 	}
 
 	.content {
-		flex-grow: 1;
-		background: #6200ea;
 		border-radius: 1rem 0 0 1rem;
-		display: flex;
 		flex-direction: column;
+		background: #6200ea;
+		display: flex;
+		flex-grow: 1;
+	}
+
+	.main {
+		border-bottom-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+		border-top-left-radius: 1rem;
+		overflow-y: auto;
 	}
 </style>

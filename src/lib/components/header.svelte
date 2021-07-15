@@ -33,18 +33,18 @@
 
 <style>
 	.content-header {
-		display: flex;
-		margin: 1rem;
 		align-items: center;
 		flex-shrink: 0;
+		display: flex;
+		margin: 1rem;
 	}
 
 	.content-header-a {
-		display: flex;
-		padding: 0.5rem 1rem;
 		text-decoration: none;
+		padding: 0.5rem 1rem;
 		border-radius: 1rem;
 		margin: 0 0.5rem;
+		display: flex;
 	}
 
 	.content-header-a:hover {
@@ -52,14 +52,14 @@
 	}
 
 	.content-header-a-svg {
-		width: 1.5rem;
 		height: 1.5rem;
+		width: 1.5rem;
 	}
 
 	.content-header-a-span {
 		margin-left: 0.5rem;
 		line-height: 1.5rem;
-		color: #fff;
 		font-weight: bold;
+		color: #fff;
 	}
 </style>
