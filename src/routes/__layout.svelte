@@ -113,6 +113,7 @@
 		flex-direction: column;
 		flex-grow: 1;
 		overflow-y: auto;
+		border-radius: 1rem;
 	}
 
 	.sidebar-courses-a {
