@@ -27,17 +27,17 @@
 
 <style>
 	.sidebar {
-		flex-direction: column;
-		align-items: center;
 		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 
 	.sidebar-logo {
+		display: flex;
+		flex-shrink: 0;
+		padding: 0.5rem;
 		border-radius: 1rem;
 		margin: 1rem 1.5rem;
-		padding: 0.5rem;
-		flex-shrink: 0;
-		display: flex;
 	}
 
 	.sidebar-logo:hover {
@@ -45,26 +45,26 @@
 	}
 
 	.sidebar-logo-svg {
-		height: 1.5rem;
 		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	.sidebar-courses {
-		flex-direction: column;
-		border-radius: 1rem;
-		overflow-y: auto;
-		display: flex;
 		flex-grow: 1;
+		display: flex;
+		overflow-y: auto;
+		border-radius: 1rem;
+		flex-direction: column;
 	}
 
 	.sidebar-courses-a {
-		flex-direction: column;
-		text-decoration: none;
+		display: flex;
+		flex-shrink: 0;
+		padding: 0.5rem;
 		border-radius: 1rem;
 		align-items: center;
-		padding: 0.5rem;
-		flex-shrink: 0;
-		display: flex;
+		text-decoration: none;
+		flex-direction: column;
 	}
 
 	.sidebar-courses-a:hover {
@@ -72,28 +72,28 @@
 	}
 
 	.sidebar-courses-a-svg {
-		border-radius: 1rem;
-		padding: 0.5rem;
-		height: 1.5rem;
 		width: 1.5rem;
+		height: 1.5rem;
+		padding: 0.5rem;
+		border-radius: 1rem;
 	}
 
 	.sidebar-courses-a-span {
-		text-overflow: ellipsis;
-		line-height: 1.5rem;
-		text-align: center;
-		font-weight: 700;
-		overflow: hidden;
 		color: #000;
 		width: 56px;
+		font-weight: 700;
+		overflow: hidden;
+		text-align: center;
+		line-height: 1.5rem;
+		text-overflow: ellipsis;
 	}
 
 	.sidebar-settings {
+		display: flex;
+		flex-shrink: 0;
+		padding: 0.5rem;
 		border-radius: 1rem;
 		margin: 1rem 1.5rem;
-		padding: 0.5rem;
-		flex-shrink: 0;
-		display: flex;
 	}
 
 	.sidebar-settings:hover {
@@ -101,7 +101,7 @@
 	}
 
 	.sidebar-settings-svg {
-		height: 1.5rem;
 		width: 1.5rem;
+		height: 1.5rem;
 	}
 </style>

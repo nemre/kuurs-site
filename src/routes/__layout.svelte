@@ -27,29 +27,29 @@
 	}
 
 	:global(body) {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-			'Open Sans', 'Helvetica Neue', sans-serif;
-		position: fixed;
-		display: flex;
+		top: 0;
+		left: 0;
+		right: 0;
 		bottom: 0;
 		margin: 0;
-		right: 0;
-		left: 0;
-		top: 0;
+		display: flex;
+		position: fixed;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+			'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 
 	.content {
-		border-radius: 1rem 0 0 1rem;
-		flex-direction: column;
-		background: #6200ea;
-		display: flex;
 		flex-grow: 1;
+		display: flex;
+		background: #6200ea;
+		flex-direction: column;
+		border-radius: 1rem 0 0 1rem;
 	}
 
 	.main {
-		border-bottom-left-radius: 1rem;
-		border-top-right-radius: 1rem;
-		border-top-left-radius: 1rem;
 		overflow-y: auto;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+		border-bottom-left-radius: 1rem;
 	}
 </style>

@@ -37,65 +37,64 @@
 
 <style>
 	.hero {
-		margin: 1rem 2.5rem 2.5rem;
-		flex-shrink: 0;
 		display: flex;
+		flex-shrink: 0;
+		margin: 1rem 2.5rem 2.5rem;
 	}
 
 	.hero-left {
-		flex-direction: column;
 		display: flex;
+		flex-direction: column;
 	}
 
 	.hero-left-h1 {
-		margin-bottom: 1.5rem;
-		line-height: 40px;
-		font-size: 32px;
 		color: #fff;
-		margin: 0;
+		font-size: 32px;
+		line-height: 40px;
+		margin: 0 0 1.5rem;
 	}
 
 	.hero-left-h1-strong {
-		font-weight: bolder;
 		color: #e7b9ff;
+		font-weight: bolder;
 	}
 
 	.hero-left-search {
+		fill: #fff;
+		display: flex;
+		flex-shrink: 0;
+		padding: 0.5rem;
 		background: #9d46ff;
 		border-radius: 1rem;
 		align-items: center;
-		padding: 0.5rem;
-		flex-shrink: 0;
-		display: flex;
-		fill: #fff;
 	}
 
 	.hero-left-search-left {
-		border-radius: 1rem;
-		background: none;
+		border: none;
+		display: flex;
 		padding: 0.5rem;
 		cursor: pointer;
-		display: flex;
-		border: none;
+		background: none;
+		border-radius: 1rem;
 	}
 
 	.hero-left-search-left-svg {
-		height: 1.5rem;
 		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	.hero-left-search-input {
-		font-family: inherit;
-		line-height: 40px;
+		padding: 0;
+		color: #fff;
+		flex-grow: 1;
+		border: none;
+		outline: none;
+		font-size: 16px;
 		background: none;
 		font-weight: 700;
 		margin: 0 0.5rem;
-		font-size: 16px;
-		outline: none;
-		flex-grow: 1;
-		border: none;
-		color: #fff;
-		padding: 0;
+		line-height: 40px;
+		font-family: inherit;
 	}
 
 	.hero-left-search-input::placeholder {
@@ -103,17 +102,17 @@
 	}
 
 	.hero-left-search-right {
-		border-radius: 1rem;
-		background: none;
+		border: none;
+		display: flex;
 		padding: 0.5rem;
 		cursor: pointer;
-		display: flex;
-		border: none;
+		background: none;
+		border-radius: 1rem;
 	}
 
 	.hero-left-search-right-svg {
-		height: 1.5rem;
 		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	.hero-left-search-left:hover,

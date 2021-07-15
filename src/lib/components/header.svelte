@@ -33,18 +33,18 @@
 
 <style>
 	.content-header {
-		align-items: center;
-		flex-shrink: 0;
-		display: flex;
 		margin: 1rem;
+		display: flex;
+		flex-shrink: 0;
+		align-items: center;
 	}
 
 	.content-header-a {
-		text-decoration: none;
-		padding: 0.5rem 1rem;
-		border-radius: 1rem;
-		margin: 0 0.5rem;
 		display: flex;
+		margin: 0 0.5rem;
+		border-radius: 1rem;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
 	}
 
 	.content-header-a:hover {
@@ -52,14 +52,14 @@
 	}
 
 	.content-header-a-svg {
-		height: 1.5rem;
 		width: 1.5rem;
+		height: 1.5rem;
 	}
 
 	.content-header-a-span {
+		color: #fff;
+		font-weight: bold;
 		margin-left: 0.5rem;
 		line-height: 1.5rem;
-		font-weight: bold;
-		color: #fff;
 	}
 </style>

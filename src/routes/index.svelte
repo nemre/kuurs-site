@@ -14,10 +14,10 @@
 
 <style>
 	.section {
-		border-radius: 1rem 1rem 0 0;
-		flex-direction: column;
-		background: #efefef;
-		text-align: center;
 		display: flex;
+		text-align: center;
+		background: #efefef;
+		flex-direction: column;
+		border-radius: 1rem 1rem 0 0;
 	}
 </style>
