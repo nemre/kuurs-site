@@ -31,6 +31,7 @@
 		background: #fff;
 		border: 1px solid #00000030;
 		padding-bottom: 16px;
+		flex-shrink: 0;
 	}
 	.coursecard:hover {
 		background: #00000010;

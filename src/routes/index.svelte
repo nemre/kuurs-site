@@ -44,9 +44,6 @@
 		flex-direction: column;
 		border-radius: 1rem 1rem 0 0;
 		flex-shrink: 0;
-
-		gap: 32px;
-		padding-top: 40px;
 	}
 
 	h1 {
@@ -54,6 +51,8 @@
 		font-size: 32px;
 		margin-left: 40px;
 		line-height: 16px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 
 	strong {

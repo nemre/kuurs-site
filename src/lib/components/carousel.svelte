@@ -31,6 +31,7 @@
 		padding: 0.5rem;
 		position: relative;
 		left: 20px;
+		visibility: hidden;
 	}
 
 	.carousel-left-svg {
@@ -42,7 +43,7 @@
 		display: flex;
 		overflow-x: auto;
 		background: #fff;
-		gap: 24px;
+		gap: 40px;
 		border-radius: 1rem;
 	}
 
