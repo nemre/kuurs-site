@@ -10,7 +10,7 @@
 
 <CoursesHero />
 <div class="section">
-	<h1>Popüler Kurslar</h1>
+	<h1>Popüler <strong>Kurslar</strong></h1>
 	<Carousel>
 		<CourseCard image="svelte-banner.png" title="Svelte" />
 		<CourseCard image="react-banner.png" title="React" />
@@ -44,14 +44,20 @@
 		flex-direction: column;
 		border-radius: 1rem 1rem 0 0;
 		flex-shrink: 0;
-		padding-left: 40px;
-		padding-right: 40px;
+
 		gap: 32px;
-		padding-top: 32px;
+		padding-top: 40px;
 	}
 
 	h1 {
 		margin: 0;
 		font-size: 32px;
+		margin-left: 40px;
+		line-height: 16px;
+	}
+
+	strong {
+		font-weight: bolder;
+		color: #6200ea;
 	}
 </style>
