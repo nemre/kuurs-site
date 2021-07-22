@@ -26,27 +26,31 @@
 		width: 0;
 	}
 
+	:global(html) {
+		height: 100%;
+		width: 100%;
+		-webkit-overflow-scrolling: touch;
+	}
 	:global(body) {
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
 		margin: 0;
+		height: 100%;
+		width: 100%;
 		display: flex;
-		position: fixed;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 			'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 
 	.content {
-		flex-grow: 1;
 		display: flex;
 		background: #6200ea;
 		flex-direction: column;
 		border-radius: 1rem 0 0 1rem;
+		min-width: 0;
 	}
 
 	.main {
+		display: flex;
+		flex-direction: column;
 		overflow-y: auto;
 		border-top-left-radius: 1rem;
 		border-top-right-radius: 1rem;

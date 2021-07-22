@@ -1,4 +1,6 @@
 <script>
+	import Carousel from '$lib/components/carousel.svelte';
+	import CourseCard from '$lib/components/courseCard.svelte';
 	import CoursesHero from '$lib/components/coursesHero.svelte';
 </script>
 
@@ -8,16 +10,48 @@
 
 <CoursesHero />
 <div class="section">
-	<img src="/demo1.png" />
-	<img src="/demo2.png" />
+	<h1>Popüler Kurslar</h1>
+	<Carousel>
+		<CourseCard image="svelte-banner.png" title="Svelte" />
+		<CourseCard image="react-banner.png" title="React" />
+		<CourseCard image="angular-banner.png" title="Angular" />
+		<CourseCard image="vuejs-banner.png" title="Vue.js" />
+		<CourseCard image="svelte-banner.png" title="Svelte" />
+		<CourseCard image="react-banner.png" title="React" />
+		<CourseCard image="angular-banner.png" title="Angular" />
+		<CourseCard image="vuejs-banner.png" title="Vue.js" />
+	</Carousel>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend Framework'lar</h1>
 </div>
 
 <style>
 	.section {
 		display: flex;
-		text-align: center;
-		background: #efefef;
+		background: #fff;
 		flex-direction: column;
 		border-radius: 1rem 1rem 0 0;
+		flex-shrink: 0;
+		padding-left: 40px;
+		padding-right: 40px;
+		gap: 32px;
+		padding-top: 32px;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 32px;
 	}
 </style>
