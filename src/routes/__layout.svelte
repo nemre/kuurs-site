@@ -24,6 +24,7 @@
 <style>
 	:global(::-webkit-scrollbar) {
 		width: 0;
+		height: 0;
 	}
 
 	:global(html) {

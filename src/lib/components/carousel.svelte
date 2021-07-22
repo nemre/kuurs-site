@@ -41,9 +41,9 @@
 	.carousel-items {
 		display: flex;
 		overflow-x: auto;
-		padding: 8px;
+		background: #fff;
 		gap: 24px;
-		margin-left: -8px;
+		border-radius: 1rem;
 	}
 
 	.carousel-right {

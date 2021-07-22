@@ -29,7 +29,7 @@
 		width: 216px;
 		border-radius: 1rem;
 		background: #fff;
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+		border: 1px solid #00000030;
 		padding-bottom: 16px;
 	}
 	.coursecard:hover {
