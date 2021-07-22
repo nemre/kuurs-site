@@ -5,7 +5,7 @@
 <style>
 	.carousel {
 		display: flex;
-		overflow-x: scroll;
+		overflow-x: auto;
 		flex-shrink: 0;
 		gap: 40px;
 		padding-top: 8px;

@@ -29,13 +29,13 @@
 	:global(html) {
 		height: 100%;
 		width: 100%;
-		-webkit-overflow-scrolling: touch;
 	}
 	:global(body) {
 		margin: 0;
 		height: 100%;
 		width: 100%;
 		display: flex;
+
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
 			'Open Sans', 'Helvetica Neue', sans-serif;
 	}
@@ -46,6 +46,7 @@
 		flex-direction: column;
 		border-radius: 1rem 0 0 1rem;
 		min-width: 0;
+		flex-grow: 1;
 	}
 
 	.main {
