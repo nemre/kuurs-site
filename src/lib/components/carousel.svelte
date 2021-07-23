@@ -2,7 +2,14 @@
 	let leftButton, carousel, rightButton;
 	let xScroll = 0;
 	let yScroll = 0;
+
 	function parseScroll() {
+		if (carousel.scrollLeft + carousel.offsetWidth === carousel.scrollWidth) {
+			rightButton.style.visibility = 'hidden';
+		} else {
+			rightButton.style.visibility = 'visible';
+		}
+
 		xScroll = carousel.scrollLeft;
 		yScroll = carousel.scrollTop;
 
@@ -11,20 +18,22 @@
 		} else {
 			leftButton.style.visibility = 'visible';
 		}
-
-		if (xScroll == 826) {
-			rightButton.style.visibility = 'hidden';
-		} else {
-			rightButton.style.visibility = 'visible';
-		}
 	}
 
 	function scrollToLeft() {
-		carousel.scrollLeft = carousel.scrollLeft - 160;
+		carousel.scrollBy({
+			top: 0,
+			left: -carousel.offsetWidth,
+			behavior: 'smooth'
+		});
 	}
 
 	function scrollToRight() {
-		carousel.scrollLeft = carousel.scrollLeft + 160;
+		carousel.scrollBy({
+			top: 0,
+			left: +carousel.offsetWidth,
+			behavior: 'smooth'
+		});
 	}
 </script>
 
