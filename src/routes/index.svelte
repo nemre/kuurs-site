@@ -32,19 +32,6 @@
 		<CourseCard image="svelte-banner.png" title="Svelte" />
 		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 	</Carousel>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
-	<h1>Frontend <strong>Framework'lar</strong></h1>
 </div>
 
 <style>
