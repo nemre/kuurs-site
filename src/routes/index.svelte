@@ -12,65 +12,25 @@
 <div class="section">
 	<h1>Popüler <strong>Kurslar</strong></h1>
 	<Carousel>
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
 		<CourseCard image="angular-banner.png" title="Angular" />
+		<CourseCard image="react-banner.png" title="React" />
+		<CourseCard image="svelte-banner.png" title="Svelte" />
 		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
 		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
 		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
-		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="angular-banner.png" title="Angular" />
 		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 	</Carousel>
 	<h1>Frontend <strong>Framework'lar</strong></h1>
 	<Carousel>
-		<CourseCard image="react-banner.png" title="React" />
 		<CourseCard image="angular-banner.png" title="Angular" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
-		<CourseCard image="svelte-banner.png" title="Svelte" />
 		<CourseCard image="react-banner.png" title="React" />
-		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 		<CourseCard image="svelte-banner.png" title="Svelte" />
+		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 		<CourseCard image="angular-banner.png" title="Angular" />
+		<CourseCard image="react-banner.png" title="React" />
+		<CourseCard image="svelte-banner.png" title="Svelte" />
+		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 	</Carousel>
 	<h1>Frontend <strong>Framework'lar</strong></h1>
 	<h1>Frontend <strong>Framework'lar</strong></h1>
@@ -90,7 +50,7 @@
 <style>
 	.section {
 		display: flex;
-		background: #fff;
+		background: #efefef;
 		flex-direction: column;
 		border-radius: 1rem 1rem 0 0;
 		flex-shrink: 0;

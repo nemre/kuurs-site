@@ -81,7 +81,6 @@
 	.carousel-items {
 		display: flex;
 		overflow-x: auto;
-		background: #fff;
 		gap: 40px;
 		border-radius: 1rem;
 	}
