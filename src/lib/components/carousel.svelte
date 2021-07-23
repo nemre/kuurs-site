@@ -1,13 +1,43 @@
+<script>
+	let leftButton, carousel, rightButton;
+	let xScroll = 0;
+	let yScroll = 0;
+	function parseScroll() {
+		xScroll = carousel.scrollLeft;
+		yScroll = carousel.scrollTop;
+
+		if (xScroll == 0) {
+			leftButton.style.visibility = 'hidden';
+		} else {
+			leftButton.style.visibility = 'visible';
+		}
+
+		if (xScroll == 826) {
+			rightButton.style.visibility = 'hidden';
+		} else {
+			rightButton.style.visibility = 'visible';
+		}
+	}
+
+	function scrollToLeft() {
+		carousel.scrollLeft = carousel.scrollLeft - 160;
+	}
+
+	function scrollToRight() {
+		carousel.scrollLeft = carousel.scrollLeft + 160;
+	}
+</script>
+
 <div class="carousel">
-	<button class="carousel-left">
+	<button class="carousel-left" bind:this={leftButton} on:click={scrollToLeft}>
 		<svg class="carousel-left-svg">
 			<use xlink:href="icons.svg#chevron-left" />
 		</svg>
 	</button>
-	<div class="carousel-items">
+	<div class="carousel-items" bind:this={carousel} on:scroll={parseScroll}>
 		<slot />
 	</div>
-	<button class="carousel-right">
+	<button class="carousel-right" bind:this={rightButton} on:click={scrollToRight}>
 		<svg class="carousel-right-svg">
 			<use xlink:href="icons.svg#chevron-right" />
 		</svg>

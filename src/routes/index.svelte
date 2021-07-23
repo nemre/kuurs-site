@@ -21,20 +21,30 @@
 		<CourseCard image="angular-banner.png" title="Angular" />
 		<CourseCard image="vuejs-banner.png" title="Vue.js" />
 	</Carousel>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
-	<h1>Frontend Framework'lar</h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<Carousel>
+		<CourseCard image="react-banner.png" title="React" />
+		<CourseCard image="angular-banner.png" title="Angular" />
+		<CourseCard image="vuejs-banner.png" title="Vue.js" />
+		<CourseCard image="svelte-banner.png" title="Svelte" />
+		<CourseCard image="react-banner.png" title="React" />
+		<CourseCard image="vuejs-banner.png" title="Vue.js" />
+		<CourseCard image="svelte-banner.png" title="Svelte" />
+		<CourseCard image="angular-banner.png" title="Angular" />
+	</Carousel>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
+	<h1>Frontend <strong>Framework'lar</strong></h1>
 </div>
 
 <style>
