@@ -9,6 +9,7 @@
 		{ name: 'Svelte', color: 'ff3e00' },
 		{ name: 'React', color: '61dafb' },
 		{ name: 'Sass', color: 'cc6699' },
+		{ name: 'JavaScript', color: 'f7df1e' },
 		{ name: 'Git', color: 'f05032' },
 		{ name: 'Framer', color: '0055ff' },
 		{ name: 'MongoDB', color: '47a248' }

@@ -17,10 +17,12 @@
 		border-radius: 1rem 0 0 1rem;
 		min-width: 0;
 		flex-grow: 1;
+		height: 100%;
 	}
 
 	.main {
 		overflow-y: auto;
 		border-radius: 1rem 1rem 0;
+		height: 100%;
 	}
 </style>

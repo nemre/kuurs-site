@@ -40,7 +40,7 @@
 		background: #f3f4f6;
 		flex-direction: column;
 		border-radius: 1rem 1rem 0 0;
-		flex-shrink: 0;
+		height: 100%;
 	}
 
 	h1 {
